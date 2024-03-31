@@ -2,14 +2,17 @@
 import styled from "styled-components";
 import "./App.css";
 import Header from "./Component/Molecules/Header";
+import EyeGlasses from "./Component/Molecules/EyeGlasses";
 
 function App() {
-  // const [count, setCount] = useState(0)
 
   return (
     <>
       {/* <Wrapper> */}
         <Header />
+        <Wrapper>
+          <EyeGlasses/>
+        </Wrapper>
       {/* </Wrapper> */}
     </>
   );
