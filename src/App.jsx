@@ -2,7 +2,7 @@
 import styled from "styled-components";
 import "./App.css";
 import Header from "./Component/Molecules/Header";
-import EyeGlasses from "./Component/Molecules/EyeGlasses";
+import EyeGlasses from "./Component/Organisms/EyeGlasses";
 
 function App() {
 

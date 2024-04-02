@@ -35,7 +35,7 @@ const EyeglassCard = ({ data }) => {
                     return (
                       <div
                         key={colorIndex}
-                        className="border-2  border-gray-400 rounded-full"
+                        className="border-2  border-white rounded-full"
                       >
                         <img
                           className="w-[15px] h-[12px] rounded-full "
