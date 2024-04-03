@@ -11,7 +11,7 @@ const BottomNavbar = () => {
               {item.left.map((leftItem, leftIndex) => {
                 return (
                   <div key={leftIndex}>
-                    <a href="">{leftItem.name}</a>
+                    <a href="" className="text-[13px] font-[500]">{leftItem.name}</a>
                   </div>
                 );
               })}

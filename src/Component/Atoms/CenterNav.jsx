@@ -31,7 +31,7 @@ const CenterNav = () => {
                   {rightItem.icon && (
                     <img src={rightItem.icon} alt={rightItem.name} />
                   )}
-                  <div>{rightItem.name}</div>
+                  <a href="" className="text-[14px]">{rightItem.name}</a>
                 </div>
               ))}
             </div>

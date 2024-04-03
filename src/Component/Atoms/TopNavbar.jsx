@@ -1,4 +1,3 @@
-import React from "react";
 import { topNavList } from "../Data/TopNavList";
 const navList=topNavList;
 const TopNavbar = () => {
@@ -7,11 +6,11 @@ const TopNavbar = () => {
     <div className="p-2">
       {navList.map((item, index) => {
         return (
-          <div key={index} className="flex justify-between">
+          <div key={index} className="flex justify-between text-[12px]">
             <div className="flex gap-4">
               {item.left.map((navData, index) => {
                 return (
-                  <a href="" key={index}>
+                  <a href="" key={index} >
                     {navData}
                   </a>
                 );
