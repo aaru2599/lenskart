@@ -1,5 +1,5 @@
 import React from "react";
-import TopNavbar from "../Atoms/TopNavbar";
+// import TopNavbar from "../Atoms/TopNavbar";
 import CenterNav from "../Atoms/CenterNav";
 import BottomNavbar from "../Atoms/BottomNavbar";
 import styled from "styled-components";
@@ -8,7 +8,7 @@ const Header = () => {
   return (
     <div>
       <Wrapper>
-        <TopNavbar />
+        {/* <TopNavbar /> */}
         <CenterNav />
       </Wrapper>
       <div className="bg-[#e9e9e9]">

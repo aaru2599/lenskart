@@ -3,18 +3,20 @@ import styled from "styled-components";
 import "./App.css";
 import Header from "./Component/Molecules/Header";
 import EyeGlasses from "./Component/Organisms/EyeGlasses";
-
+import TopNavbar from "./Component/Atoms/TopNavbar";
 function App() {
-
   return (
-    <>
+    <div className="relative">
       {/* <Wrapper> */}
+      <TopNavbar/>
+      <div className="sticky top-0 z-10 bg-white">
         <Header />
-        <Wrapper>
-          <EyeGlasses/>
-        </Wrapper>
+      </div>
+      <Wrapper>
+        <EyeGlasses />
+      </Wrapper>
       {/* </Wrapper> */}
-    </>
+    </div>
   );
 }
 
