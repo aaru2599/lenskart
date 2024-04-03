@@ -14,11 +14,11 @@ export const CenterNavData = [
         name: "Sign In & Sign Up",
       },
       {
-        icon: "src/Component/SVG/WishList.svg",
+        icon: "/SVG/WishList.svg",
         name: "Wishlist",
       },
       {
-        icon:"src/Component/SVG/Cart.svg",
+        icon:"/SVG/Cart.svg",
         name: "Cart",
       },
     ],
