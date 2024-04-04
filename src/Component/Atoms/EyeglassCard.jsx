@@ -1,34 +1,25 @@
-import { data } from "autoprefixer";
-import { useState } from "react";
 // import { FaRegHeart } from "react-icons/fa";
 
-import { FaHeart } from "react-icons/fa";
 import { CiHeart } from "react-icons/ci";
+import { Link, useNavigate } from "react-router-dom";
 
 const EyeglassCard = ({ data }) => {
-  const [wishlist, setWishlist] = useState([]);
-  const onAddToWishlist = (itemId) => {
-    const selectedItem = data.find((item) => item.id === itemId);
-    if (wishlist.sme((item) => item.id === itemId)) {
-      setWishlist((prevWishlist) =>
-        prevWishlist.filter((item) => item.id === itemId)
-      );
-    } else {
-      setWishlist((prevWishlist) => [...prevWishlist, selectedItem]);
-    }
+  const navigate = useNavigate();
+  const onCardClick = (product) => {
+    navigate(`/product-details/${product.id}`);
+    // navigate(`/product-details/${product.id}`);
   };
-  const isItemInWishlist = (itemId) => {
-    return wishlist.some((item) => item.id === itemId);
-  };
-
-  console.log("wishlist", wishlist);
   return (
     <div className="grid gap-3 grid-cols-4 ">
       {data.map((item, index) => {
-        const isItemWished = isItemInWishlist(item.id);
         return (
           <div key={index} className="border rounded p-2">
-            <div className="relative">
+            <Link
+              className="relative"
+              onClick={() => onCardClick(item)}
+              to={`/product-details/${item.id}`}
+              // to={`product-details/${item.id}`}
+            >
               <div className=" absolute bottom-2 right-2    ">
                 <div>
                   {item.rating.map((ratingItem, ratingIndex) => {
@@ -81,25 +72,23 @@ const EyeglassCard = ({ data }) => {
                   />
 
                   <div className="items-center absolute top-0 right-0 flex justify-between w-[100%]">
-                   
                     <div className="  text-[10px] bg-green-200 font-semibold rounded px-2 text-green-800">
                       {item.coupon}
                     </div>
-                    <div
-                      className=" text-[20px] "
-                      onClick={() => onAddToWishlist(item.id)}
-                    >
-                      <CiHeart color={isItemWished ? "red" : ""} />
+                    <div className=" text-[20px] ">
+                      <CiHeart />
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
+            </Link>
 
             {/* =========================bottom section====================== */}
             <div className="pt-2 flex flex-col gap-2">
               <div className="flex justify-between">
-                <div className="font-semibold text-[13px] w-[50%]">{item.name}</div>
+                <div className="font-semibold text-[13px] w-[50%]">
+                  {item.name}
+                </div>
                 <div className="text-[12px] text-end w-[50%] truncate font-[600] text-gray-600 ">
                   {item.type}
                 </div>

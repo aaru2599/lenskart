@@ -42,6 +42,32 @@ export const EyeglassesData = [
     size: "Medium",
     price: 1200,
     coupon: "Get For ₹1200. Coupon: SINGLE",
+    details_image: [
+      "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//l/i/lenskart-air-la-e15417-w-c1-eyeglasses_csvfile-1701688526805-img_7894.jpg",
+      "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//l/i/lenskart-air-la-e15417-w-c1-eyeglasses_csvfile-1701688470121-img_7893.jpg",
+      "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//model/l/i/peyush-bansal-shark-tank-ocean-blue-full-rim-lenskart-hustlr-eyeglasses_csvfile-1702382351744-1_dec_m-f356768.jpg",
+      "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//model/l/i/peyush-bansal-shark-tank-ocean-blue-full-rim-lenskart-hustlr-eyeglasses_csvfile-1702382412565-1_dec_m-f356772.jpg",
+      "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//model/l/i/peyush-bansal-shark-tank-ocean-blue-full-rim-lenskart-hustlr-eyeglasses_csvfile-1702382443979-1_dec_m-f357229.jpg",
+      "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//model/l/i/peyush-bansal-shark-tank-ocean-blue-full-rim-lenskart-hustlr-eyeglasses_csvfile-1702382470622-1_dec_m-f357232.jpg",
+      "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//l/i/lenskart-air-la-e15417-w-c1-eyeglasses_csvfile-1701688370154-img_7898.jpg",
+      "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//l/i/lenskart-air-la-e15417-w-c1-eyeglasses_csvfile-1701688398820-img_7899.jpg",
+      "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//l/i/lenskart-air-la-e15417-w-c1-eyeglasses_csvfile-1701688447605-img_7901.jpg",
+      "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//l/i/lenskart-air-la-e15417-w-c1-eyeglasses_csvfile-1701688263505-img_7897.jpg",
+      "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//l/i/lenskart-air-la-e15417-w-c1-eyeglasses_csvfile-1701688575599-img_7896.jpg",
+      "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//l/i/lenskart-air-la-e15417-w-c1-eyeglasses_csvfile-1701688546955-img_7894_image_pla.jpg",
+    ],
+    diff_col: "",
+    lens_promise: "",
+    technical_info: [
+      {
+        ProductId: 204837,
+        ModelNo: "LA S13164",
+        FrameSize: "Wide",
+        FrameWidth: "141 mm",
+        FrameDimensions: " 42 - 18 - 145",
+        SuitedFor:""
+      },
+    ],
   },
   {
     id: 2,
