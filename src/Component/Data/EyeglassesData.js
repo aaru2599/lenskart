@@ -39,6 +39,7 @@ export const EyeglassesData = [
     ],
     name: "Lenskart Hustlr",
     type: "Ocean Blue",
+    full_type:"Ocean Blue Full Rim Wayfarer",
     size: "Medium",
     price: 1200,
     coupon: "Get For ₹1200. Coupon: SINGLE",
@@ -56,8 +57,8 @@ export const EyeglassesData = [
       "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//l/i/lenskart-air-la-e15417-w-c1-eyeglasses_csvfile-1701688575599-img_7896.jpg",
       "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//l/i/lenskart-air-la-e15417-w-c1-eyeglasses_csvfile-1701688546955-img_7894_image_pla.jpg",
     ],
-    diff_col: "",
-    lens_promise: "",
+    diff_col: "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//v/i/matte-gold-black-blue-gradient-full-rim-rectangle-square-vincent-chase-polarized-the-metal-edit-vc-s12934-c2-polarized-sunglasses_powersun111.png",
+    lens_promise: "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//j/i/gold-brown-full-rim-round-john-jacobs-ultimate-flex-jj-e13912-c3-eyeglasses-tanaka_promise_(1).png",
     technical_info: [
       {
         ProductId: 204837,

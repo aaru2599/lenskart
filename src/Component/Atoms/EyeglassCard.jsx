@@ -18,6 +18,7 @@ const EyeglassCard = ({ data }) => {
               className="relative"
               onClick={() => onCardClick(item)}
               to={`/product-details/${item.id}`}
+              state={{item}}
               // to={`product-details/${item.id}`}
             >
               <div className=" absolute bottom-2 right-2    ">
