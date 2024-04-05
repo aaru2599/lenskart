@@ -74,19 +74,22 @@ export const EyeglassesData = [
     lens_promise:
       "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//j/i/gold-brown-full-rim-round-john-jacobs-ultimate-flex-jj-e13912-c3-eyeglasses-tanaka_promise_(1).png",
 
-    technical_info: {
-      heading: "Technical Info",
-      data: [
-        {
-          ProductId: 204837,
-          ModelNo: "LA S13164",
-          FrameSize: "Wide",
-          FrameWidth: "141 mm",
-          FrameDimensions: " 42 - 18 - 145",
-          SuitedFor: "",
-        },
-      ],
-    },
+    technical_info: [
+      {
+        heading: "Technical Info",
+        data: [
+          {
+            heading:"Technical Info",
+            ProductId: 204837,
+            ModelNo: "LA S13164",
+            FrameSize: "Wide",
+            FrameWidth: "141 mm",
+            FrameDimensions: " 42 - 18 - 145",
+            SuitedFor: "",
+          },
+        ],
+      },
+    ],
   },
   {
     id: 2,
