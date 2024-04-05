@@ -39,10 +39,22 @@ export const EyeglassesData = [
     ],
     name: "Lenskart Hustlr",
     type: "Ocean Blue",
-    full_type:"Ocean Blue Full Rim Wayfarer",
+    full_type: "Ocean Blue Full Rim Wayfarer",
     size: "Medium",
     price: 1200,
     coupon: "Get For ₹1200. Coupon: SINGLE",
+    featured_img: [
+      "https://static1.lenskart.com/media/desktop/img/republic/hustlr-pdps/Ocean%20Blue-Mumbai/Oceanblue1.png",
+      "https://static1.lenskart.com/media/desktop/img/republic/hustlr-pdps/Ocean%20Blue-Mumbai/Oceanblue2.png",
+      "https://static1.lenskart.com/media/desktop/img/republic/ipl-banner/Oceanblue3%20(1).png",
+      "https://static1.lenskart.com/media/desktop/img/oct9/hustlr-new/pdpo3.jpg",
+      "https://static1.lenskart.com/media/desktop/img/oct9/hustlr-new/pdpo6.jpg",
+      "https://static1.lenskart.com/media/desktop/img/oct9/hustlr-new/pdpo7.jpg",
+      "https://static1.lenskart.com/media/desktop/img/oct9/hustlr-new/pdpo9.jpg",
+      "https://static1.lenskart.com/media/desktop/img/oct9/hustlr-new/pdpo10.jpg",
+      "https://static1.lenskart.com/media/desktop/img/oct9/hustlr-new/pdpo11.jpg",
+      "https://static1.lenskart.com/media/desktop/img/oct9/hustlr-new/pdpo12.jpg",
+    ],
     details_image: [
       "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//l/i/lenskart-air-la-e15417-w-c1-eyeglasses_csvfile-1701688526805-img_7894.jpg",
       "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//l/i/lenskart-air-la-e15417-w-c1-eyeglasses_csvfile-1701688470121-img_7893.jpg",
@@ -57,18 +69,24 @@ export const EyeglassesData = [
       "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//l/i/lenskart-air-la-e15417-w-c1-eyeglasses_csvfile-1701688575599-img_7896.jpg",
       "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//l/i/lenskart-air-la-e15417-w-c1-eyeglasses_csvfile-1701688546955-img_7894_image_pla.jpg",
     ],
-    diff_col: "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//v/i/matte-gold-black-blue-gradient-full-rim-rectangle-square-vincent-chase-polarized-the-metal-edit-vc-s12934-c2-polarized-sunglasses_powersun111.png",
-    lens_promise: "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//j/i/gold-brown-full-rim-round-john-jacobs-ultimate-flex-jj-e13912-c3-eyeglasses-tanaka_promise_(1).png",
-    technical_info: [
-      {
-        ProductId: 204837,
-        ModelNo: "LA S13164",
-        FrameSize: "Wide",
-        FrameWidth: "141 mm",
-        FrameDimensions: " 42 - 18 - 145",
-        SuitedFor:""
-      },
-    ],
+    diff_col:
+      "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//v/i/matte-gold-black-blue-gradient-full-rim-rectangle-square-vincent-chase-polarized-the-metal-edit-vc-s12934-c2-polarized-sunglasses_powersun111.png",
+    lens_promise:
+      "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//j/i/gold-brown-full-rim-round-john-jacobs-ultimate-flex-jj-e13912-c3-eyeglasses-tanaka_promise_(1).png",
+
+    technical_info: {
+      heading: "Technical Info",
+      data: [
+        {
+          ProductId: 204837,
+          ModelNo: "LA S13164",
+          FrameSize: "Wide",
+          FrameWidth: "141 mm",
+          FrameDimensions: " 42 - 18 - 145",
+          SuitedFor: "",
+        },
+      ],
+    },
   },
   {
     id: 2,

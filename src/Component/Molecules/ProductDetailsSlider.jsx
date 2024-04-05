@@ -1,21 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import '/src/Component/Molecules/ProductDetailsSlider.css'
 import SliderPrevArrow from "../Atoms/Modal/SliderPrevArrow";
 import SliderNextArrow from "../Atoms/Modal/SliderNextArrow";
-function ProductDetailSlider({imgLink}) {
-    console.log("imgLink",imgLink);
+function ProductDetailSlider({ imgLink, setClickImage }) {
+  const [selectedImage, setSelectedImage] = useState(null);
+  // console.log("imgLink",imgLink);
   var settings = {
+    
     dots: false,
     infinite: false,
     speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 4,
+    slidesToShow: 6,
+    slidesToScroll: 1,
     focusOnSelect: true,
-    initialSlide: 0,
-    nextArrow: <SliderPrevArrow />,
-    prevArrow: <SliderNextArrow />,
+    // centerPadding: "60px",
+    
+    initialSlide: 1,
+    prevArrow: <SliderPrevArrow />,
+    nextArrow: <SliderNextArrow />,
     responsive: [
       {
         breakpoint: 1024,
@@ -23,36 +28,46 @@ function ProductDetailSlider({imgLink}) {
           slidesToShow: 3,
           slidesToScroll: 3,
           infinite: true,
-          dots: true
-        }
+          dots: true,
+        },
       },
       {
         breakpoint: 600,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
-          initialSlide: 2
-        }
+          initialSlide: 2,
+        },
       },
       {
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-    ]
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
+  const onImageClick = (imgUrl) => {
+    setClickImage(imgUrl);
+    setSelectedImage(imgUrl)
+    console.log("e.target.value", imgUrl);
   };
   return (
-    <div className="slider-container w-[500px] ">
+    <div className="slider-container w-[600px] ">
       <Slider {...settings}>
-       {
-        imgLink.map((imgData,index)=>{
-            return <div key={index} className="  gap-2">
-                <img src={imgData}  alt="" className="w-[100px] h-[100px] p-2   border rounded" />
+        {imgLink.map((imgData, index) => {
+          return (
+            <div key={index} className="  ">
+              <img
+                src={imgData}
+                onClick={()=>onImageClick(imgData)}
+                alt=""
+                className={`w-[80px] h-[80px] p-2   border rounded focus:border-2 ${imgData==selectedImage?"border-black":""} `}
+              />
             </div>
-        })
-       }
+          );
+        })}
       </Slider>
     </div>
   );

@@ -6,7 +6,7 @@ const ProductDetailInfo = ({ data }) => {
   console.log("data", data);
   return (
     <>
-      <div className="p-4 flex flex-col gap-2 border m-3">
+      <div className="p-4 flex flex-col gap-2 border ">
         <div>
           <div className="flex justify-between items-center">
             <div>{data.name}</div>
@@ -44,8 +44,12 @@ const ProductDetailInfo = ({ data }) => {
           <div>( with 1 Year Warranty & 14 Day Return )</div>
         </div>
         <div className="border h-[60px] relative rounded p-2 flex justify-center items-center">
-            <div className="">Try On</div>
-            <img src="https://static.lenskart.com/media/desktop/img/pdp/try_on_model.png"  className="absolute bottom-0 right-6"  alt="" />
+          <div className="">Try On</div>
+          <img
+            src="https://static.lenskart.com/media/desktop/img/pdp/try_on_model.png"
+            className="absolute bottom-0 right-6"
+            alt=""
+          />
         </div>
       </div>
     </>
