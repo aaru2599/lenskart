@@ -1,5 +1,4 @@
-import React from "react";
-
+import React, { useState } from "react";
 import {
   Accordion,
   AccordionItem,
@@ -7,63 +6,80 @@ import {
   AccordionItemButton,
   AccordionItemPanel,
 } from "react-accessible-accordion";
-// import 'react-accessible-accordion/dist/fancy-example.css';
-
-// Demo styles, see 'Styles' section below for some notes on use.
 import "react-accessible-accordion/dist/fancy-example.css";
+import "/src/Component/Atoms/Accordian.css";
 
 function Accordian({ accordianData }) {
   console.log("accordianData", accordianData);
+
   return (
-    <>
+    <div className=" flex flex-col gap-2">
       {accordianData &&
-        accordianData.map((data, index) => {
+        accordianData.map((item, index) => {
           return (
-            <Accordion key={index} className="w-[500px]">
-              <AccordionItem>
-                <AccordionItemHeading>
-                  <AccordionItemButton>{data.heading}</AccordionItemButton>
+            <Accordion allowZeroExpanded key={index} className=" ">
+              <AccordionItem className="">
+                <AccordionItemHeading className="">
+                  <AccordionItemButton>{item.heading}</AccordionItemButton>
                 </AccordionItemHeading>
                 <AccordionItemPanel>
-                  {data.data.map((items, index) => {
-                    return (
-                      <div key={index}>
-                        <div className="flex justify-between">
-                          <div>Product Id</div>
-                          <div>{items.ProductId}</div>
+                  {item.tech_info &&
+                    item.tech_info.map((items, itemIndex) => {
+                      return (
+                        <div key={itemIndex}>
+                          <div className="flex justify-between">
+                            <div className="text-[14px] font-[500]">
+                              Product Id
+                            </div>
+                            <div className="text-[13px]">{items.ProductId}</div>
+                          </div>
+                          <div className="flex justify-between">
+                            <div className="text-[14px] font-[500]">
+                              Model No.
+                            </div>
+                            <div className="text-[13px]">{items.ModelNo}</div>
+                          </div>{" "}
+                          <div className="flex justify-between">
+                            <div className="text-[14px] font-[500]">
+                              Frame Size
+                            </div>
+                            <div className="text-[13px]">{items.FrameSize}</div>
+                          </div>{" "}
+                          <div className="flex justify-between">
+                            <div className="text-[14px] font-[500]">
+                              Frame Width
+                            </div>
+                            <div className="text-[13px]">
+                              {items.FrameWidth}
+                            </div>
+                          </div>
+                          <div className="flex justify-between">
+                            <div className="text-[14px] font-[500]">
+                              Frame Dimensions
+                            </div>
+                            <div className="text-[13px]">
+                              {items.FrameDimensions}
+                            </div>
+                          </div>
+                          <div className="flex justify-between">
+                            <div className="text-[14px] font-[500]">
+                              Suited For
+                            </div>
+                            <div className="text-[13px]">i</div>
+                          </div>
+                          <div className="flex justify-between">
+                            <div className="text-[14px] font-[500]"></div>
+                          </div>
                         </div>
-                        <div className="flex justify-between">
-                          <div>Model No.</div>
-                          <div>{items.ModelNo}</div>
-                        </div>{" "}
-                        <div className="flex justify-between">
-                          <div>Frame Size</div>
-                          <div>{items.FrameSize}</div>
-                        </div>{" "}
-                        <div className="flex justify-between">
-                          <div>Frame Width</div>
-                          <div>{items.FrameWidth}</div>
-                        </div>
-                        <div className="flex justify-between">
-                          <div>Frame Dimensions</div>
-                          <div>{items.FrameDimensions}</div>
-                        </div>
-                        <div className="flex justify-between">
-                          <div>Suited For</div>
-                          <div>i</div>
-                        </div>
-                        <div className="flex justify-between">
-                          <div>Suited For</div>
-                        </div>
-                      </div>
-                    );
-                  })}
+                      );
+                    })}
                 </AccordionItemPanel>
               </AccordionItem>
             </Accordion>
           );
         })}
-    </>
+    </div>
   );
 }
+
 export default Accordian;

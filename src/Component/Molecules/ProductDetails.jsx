@@ -16,24 +16,25 @@ const ProductDetails = () => {
   // console.log("selectedProduct", selectedProduct);
 
   return (
-    <div className="relative">
-      <div className="sticky top-0 bg-white z-20">
-      <Header  />
+    <div className="">
+      <div className="sticky bg-white top-0  z-20">
+        <Header />
       </div>
-    <div className="relative">
-    {selectedProduct ? (
-        <div className="flex p-4  ">
-          <div style={{ flex: "70%" }} className="flex justify-center  ">
-            <ProductDetailsLeft selectedProduct={selectedProduct} />
+      <div className="">
+        {selectedProduct ? (
+          <div className="flex p-4  ">
+            <div style={{ flex: "70%" }} className="flex justify-center  ">
+              <ProductDetailsLeft selectedProduct={selectedProduct} />
+            </div>
+            <div className="" style={{ flex: "30%" }}>
+              <div className="sticky top-32"><ProductDetailInfo data={selectedProduct} /></div>
+
+            </div>
           </div>
-          <div className="sticky top-0 right-0" style={{ flex: "30%" }}>
-            <ProductDetailInfo data={selectedProduct} />
-          </div>
-        </div>
-      ) : (
-        "Loading"
-      )}
-    </div>
+        ) : (
+          "Loading"
+        )}
+      </div>
     </div>
   );
 };

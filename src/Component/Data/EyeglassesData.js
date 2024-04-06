@@ -40,6 +40,7 @@ export const EyeglassesData = [
     name: "Lenskart Hustlr",
     type: "Ocean Blue",
     full_type: "Ocean Blue Full Rim Wayfarer",
+    lens_type:"With Anti-Glare Lenses",
     size: "Medium",
     price: 1200,
     coupon: "Get For ₹1200. Coupon: SINGLE",
@@ -74,18 +75,47 @@ export const EyeglassesData = [
     lens_promise:
       "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//j/i/gold-brown-full-rim-round-john-jacobs-ultimate-flex-jj-e13912-c3-eyeglasses-tanaka_promise_(1).png",
 
-    technical_info: [
+    accordian_data: [
       {
-        heading: "Technical Info",
-        data: [
+        heading: "Technical Information",
+        tech_info: [
           {
-            heading:"Technical Info",
             ProductId: 204837,
             ModelNo: "LA S13164",
             FrameSize: "Wide",
             FrameWidth: "141 mm",
             FrameDimensions: " 42 - 18 - 145",
             SuitedFor: "",
+          },
+        ],
+      },
+      {
+        heading: "Visit Nearby Store",
+        store: [
+          {
+            img: "https://static.lenskart.com/media/desktop/img/pdp/visit_store.png",
+            content: "Please Share Your Location To See Nearby Stores",
+            store_locator: "Store Locator",
+          },
+        ],
+      },
+      {
+        heading: "Check Delivery Options",
+        store: [
+          {
+            img: "https://static.lenskart.com/media/desktop/img/pdp/visit_store.png",
+            content: "Please Share Your Location To See Nearby Stores",
+            store_locator: "Store Locator",
+          },
+        ],
+      },
+      {
+        heading: "Review(0)",
+        store: [
+          {
+            img: "https://static.lenskart.com/media/desktop/img/pdp/visit_store.png",
+            content: "Please Share Your Location To See Nearby Stores",
+            store_locator: "Store Locator",
           },
         ],
       },

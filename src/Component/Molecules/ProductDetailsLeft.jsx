@@ -8,31 +8,36 @@ const ProductDetailsLeft = ({ selectedProduct }) => {
   console.log("selectedProduct.featured_img", selectedProduct);
   return (
     <div className="flex flex-col gap-3">
-      <div className="flex gap-4 flex-col justify-between items-center border-b pb-4">
-        <img
-          src={clickImage || selectedProduct.normal_image}
-          className="w-[500px] h-[400px] rounded border object-contain"
-          alt=""
-        />
-       <div className="">
-       {selectedProduct.details_image && (
-          <ProductDetailSlider
-            imgLink={selectedProduct.details_image}
-            setClickImage={setClickImage}
+      <div className=" flex gap-4 flex-col justify-between items-center border-b pb-4">
+        <div className="rounded border relative">
+          <img
+            src={clickImage || selectedProduct.normal_image}
+            className="w-[500px] h-[350px]  object-contain"
+            alt=""
           />
-        )}
-       </div>
+          <div className="absolute right-2 bottom-2 rounded bg-green-200 text-green-800 font-[600] text-[12px] px-2">{selectedProduct.coupon}</div>
+        </div>
+        <div className="">
+          {selectedProduct.details_image && (
+            <ProductDetailSlider
+              imgLink={selectedProduct.details_image}
+              setClickImage={setClickImage}
+            />
+          )}
+        </div>
       </div>
-      <div>
-        <Accordian accordianData={selectedProduct.technical_info}/>
-      </div>
+
       <div className="flex justify-between border-b py-4">
-        <img src={selectedProduct.diff_col} alt="" className=" w-[200px]" />
+        <img
+          src={selectedProduct.diff_col}
+          alt=""
+          className="border rounded w-[265px]"
+        />
         <iframe
           src="https://www.youtube.com/embed/dRxJ8okzHtQ?autoplay=1&amp;mute=1&amp;loop=1&amp;rel=0&amp;showinfo=0&amp;color=white&amp;iv_load_policy=3&amp;playlist=dRxJ8okzHtQ"
           //   frameBorder="4"
           //   width="100%"
-          className="border w-[200px]  object-contain "
+          className=" w-[265px]  object-contain rounded"
           //   height="370px"
           allowfullscreen=""
         ></iframe>
@@ -40,22 +45,25 @@ const ProductDetailsLeft = ({ selectedProduct }) => {
         <img
           src={selectedProduct.lens_promise}
           alt=""
-          className=" border  w-[200px]"
+          className=" border  w-[265px] rounded"
         />
       </div>
-      <div className="grid grid-cols-3 gap-2">
-        {selectedProduct.featured_img.map((imgUrl, index) => {
-          return (
-            <div key={index} className="">
-              <img
-                src={imgUrl}
-                alt=""
-                className="w-[250px] h-[250px]  object-contain"
-              />
-            </div>
-          );
-        })}
-      </div>
+      {selectedProduct.featured_img && (
+        <div className="grid grid-cols-3  justify-between">
+          {selectedProduct.featured_img.map((imgUrl, index) => {
+            return (
+              <div key={index} className=" p-4 flex ">
+                <img
+                  src={imgUrl}
+                  alt=""
+                  className="w-[250px] rounded h-[250px] border-b  border  object-contain"
+                />
+              </div>
+            );
+          })}
+        </div>
+      )}
+     
     </div>
   );
 };
