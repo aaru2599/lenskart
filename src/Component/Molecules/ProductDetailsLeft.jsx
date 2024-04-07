@@ -8,6 +8,10 @@ const ProductDetailsLeft = ({ selectedProduct }) => {
   console.log("selectedProduct.featured_img", selectedProduct);
   return (
     <div className="flex flex-col gap-3">
+      <div className=" text-[14px]">
+        {selectedProduct.name} {selectedProduct.full_name}
+      </div>
+
       <div className=" flex gap-4 flex-col justify-between items-center border-b pb-4">
         <div className="rounded border relative">
           <img
@@ -15,7 +19,9 @@ const ProductDetailsLeft = ({ selectedProduct }) => {
             className="w-[500px] h-[350px]  object-contain"
             alt=""
           />
-          <div className="absolute right-2 bottom-2 rounded bg-green-200 text-green-800 font-[600] text-[12px] px-2">{selectedProduct.coupon}</div>
+          <div className="absolute right-2 bottom-2 rounded bg-green-200 text-green-800 font-[600] text-[12px] px-2">
+            {selectedProduct.coupon}
+          </div>
         </div>
         <div className="">
           {selectedProduct.details_image && (
@@ -34,7 +40,7 @@ const ProductDetailsLeft = ({ selectedProduct }) => {
           className="border rounded w-[265px]"
         />
         <iframe
-          src="https://www.youtube.com/embed/dRxJ8okzHtQ?autoplay=1&amp;mute=1&amp;loop=1&amp;rel=0&amp;showinfo=0&amp;color=white&amp;iv_load_policy=3&amp;playlist=dRxJ8okzHtQ"
+          src={selectedProduct.iframe_link}
           //   frameBorder="4"
           //   width="100%"
           className=" w-[265px]  object-contain rounded"
@@ -63,7 +69,6 @@ const ProductDetailsLeft = ({ selectedProduct }) => {
           })}
         </div>
       )}
-     
     </div>
   );
 };

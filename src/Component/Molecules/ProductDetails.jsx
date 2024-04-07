@@ -23,6 +23,7 @@ const ProductDetails = () => {
       <div className="">
         {selectedProduct ? (
           <div className="flex p-4  ">
+            
             <div style={{ flex: "70%" }} className="flex justify-center  ">
               <ProductDetailsLeft selectedProduct={selectedProduct} />
             </div>

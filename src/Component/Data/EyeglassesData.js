@@ -39,10 +39,12 @@ export const EyeglassesData = [
     ],
     name: "Lenskart Hustlr",
     type: "Ocean Blue",
+    full_name:"Ocean Blue Full Rim Lenskart Hustlr Eyeglasses - 216521",
     full_type: "Ocean Blue Full Rim Wayfarer",
     lens_type:"With Anti-Glare Lenses",
     size: "Medium",
     price: 1200,
+    iframe_link:"https://www.youtube.com/embed/dRxJ8okzHtQ?autoplay=1&amp;mute=1&amp;loop=1&amp;rel=0&amp;showinfo=0&amp;color=white&amp;iv_load_policy=3&amp;playlist=dRxJ8okzHtQ",
     coupon: "Get For ₹1200. Coupon: SINGLE",
     featured_img: [
       "https://static1.lenskart.com/media/desktop/img/republic/hustlr-pdps/Ocean%20Blue-Mumbai/Oceanblue1.png",
