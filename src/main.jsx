@@ -4,11 +4,23 @@ import App from "./App.jsx";
 import "./index.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import ProductDetails from "./Component/Molecules/ProductDetails.jsx";
+import HomeSlider from "./Component/Molecules/HomeSlider.jsx";
+import EyeGlasses from "./Component/Organisms/EyeGlasses.jsx";
+import Header from "./Component/Molecules/Header.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
   },
+  {
+    path: "/slider",
+    element: <HomeSlider />,
+  },
+  {
+    path: "/Eyeware",
+    element: <EyeGlasses />,
+  },
+  
   {
     path: "/product-details/:id",
     element: <ProductDetails />,
@@ -16,6 +28,7 @@ const router = createBrowserRouter([
 ]);
 ReactDOM.createRoot(document.getElementById("root")).render(
   <>
+  
     <RouterProvider router={router} />
   </>
 );

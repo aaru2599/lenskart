@@ -7,11 +7,11 @@ const BottomNavbar = () => {
       {bottomNav.map((item, index) => {
         return (
           <div key={index} className="flex justify-between items-center">
-            <div className="flex gap-3 items-center">
+            <div className="flex gap-3 justify-between items-center">
               {item.left.map((leftItem, leftIndex) => {
                 return (
                   <div key={leftIndex}>
-                    <a href="" className="hover:bg-slate-300 p-2 rounded text-[13px] font-[500]">{leftItem.name}</a>
+                    <a href="" className="tracking-[1px] hover:bg-slate-300 p-2 rounded text-[13px] font-[500]">{leftItem.name}</a>
                   </div>
                 );
               })}

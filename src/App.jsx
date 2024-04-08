@@ -4,6 +4,7 @@ import "./App.css";
 import Header from "./Component/Molecules/Header";
 import EyeGlasses from "./Component/Organisms/EyeGlasses";
 import TopNavbar from "./Component/Atoms/TopNavbar";
+import Home from "./Component/Home/Home";
 function App() {
   return (
     <div className="relative">
@@ -15,7 +16,7 @@ function App() {
         <Header />
       </div>
       <Wrapper>
-        <EyeGlasses />
+        <Home/>
       </Wrapper>
       {/* </Wrapper> */}
     </div>
@@ -24,7 +25,7 @@ function App() {
 
 export default App;
 
-const Wrapper = styled.div`
+export const Wrapper = styled.div`
   max-width: 1330px;
   margin: 0 auto;
 `;

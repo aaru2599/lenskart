@@ -7,7 +7,7 @@ const ProductDetailInfo = ({ data }) => {
   console.log("data", data);
   return (
     <>
-      <div className="p-4 flex flex-col gap-2 border  text-slate-800">
+      <div className="p-4 flex flex-col gap-2 border rounded  text-slate-800">
         <div className="flex flex-col gap-2">
           <div className="flex justify-between items-center">
             <div className="text-[13px]">{data.name}</div>

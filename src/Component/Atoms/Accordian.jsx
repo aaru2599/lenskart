@@ -27,7 +27,7 @@ function Accordian({ accordianData }) {
                     item.tech_info.map((items, itemIndex) => {
                       return (
                         <div key={itemIndex}>
-                          <div className="flex justify-between">
+                          <div className="flex  justify-between">
                             <div className="text-[14px] font-[500]">
                               Product Id
                             </div>
