@@ -1,5 +1,6 @@
 import React from "react";
 import { BottomNavData } from "../Data/BottomNavData";
+import { Link } from "react-router-dom";
 const bottomNav = BottomNavData;
 const BottomNavbar = () => {
   return (
@@ -11,7 +12,7 @@ const BottomNavbar = () => {
               {item.left.map((leftItem, leftIndex) => {
                 return (
                   <div key={leftIndex}>
-                    <a href="" className="tracking-[1px] hover:bg-slate-300 p-2 rounded text-[13px] font-[500]">{leftItem.name}</a>
+                    <Link to={leftItem.link} href="" className="tracking-[1px] hover:bg-slate-300 p-2 rounded text-[13px] font-[500]">{leftItem.name}</Link>
                   </div>
                 );
               })}

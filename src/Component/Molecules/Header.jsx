@@ -12,9 +12,9 @@ const Header = () => {
         <CenterNav />
       </Wrapper>
       <div className="bg-[#e9e9e9]">
-      <Wrapper>
-        <BottomNavbar />
-      </Wrapper>
+        <Wrapper>
+          <BottomNavbar />
+        </Wrapper>
       </div>
     </div>
   );

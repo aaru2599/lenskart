@@ -1,14 +1,15 @@
 import React from "react";
 import { CenterNavData } from "../Data/CenterNavData";
 import { Link } from "react-router-dom";
+import Button from "./Button";
 const navData = CenterNavData;
 const CenterNav = () => {
   return (
-    <div className="p-2">
+    <div className="p-2 ">
       {navData.map((data, index) => {
         return (
           <div key={index} className="flex justify-between items-center">
-            <Link to={'/'} className="flex  gap-[30px]">
+            <Link to={"/"} className="flex  gap-[30px]">
               {data.left.map((leftItem, index) => (
                 <img
                   src={leftItem}
@@ -32,12 +33,13 @@ const CenterNav = () => {
                   {rightItem.icon && (
                     <img src={rightItem.icon} alt={rightItem.name} />
                   )}
-                  <a href="" className="text-[14px]">{rightItem.name}</a>
+                  <a href="" className="text-[14px]">
+                    {rightItem.name}
+                  </a>
                 </div>
               ))}
 
-<button type="button" className="text-white bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-3 py-1.5 text-center me-2 mb-2">Contact Us</button>
-
+             <Button data={"Contact Us"}/>
             </div>
           </div>
         );

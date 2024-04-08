@@ -11,20 +11,20 @@ const HomeSlider = () => {
       <Carousel
         additionalTransfrom={0}
         arrows
-        autoPlaySpeed={3000}
+        autoPlaySpeed={2000}
         centerMode={false}
         className=" flex justify-center"
         containerClass=""
-        dotListClass=""
+        dotListClass="invisible"
         draggable
-        // autoPlay={true}
+        autoPlay={true}
         focusOnSelect={false}
         infinite
         itemClass=""
         keyBoardControl
         minimumTouchDrag={80}
         pauseOnHover
-        renderArrowsWhenDisabled={false}
+        renderArrowsWhenDisabled={true}
         renderButtonGroupOutside={false}
     
         renderDotsOutside={false}
