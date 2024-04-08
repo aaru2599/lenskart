@@ -11,24 +11,15 @@ import RightSide from "../Molecules/RightSide";
 const EyeGlasses = () => {
   return (
     <div className="relative">
-      <div >
-        {/* <Wrapper> */}
-        <Wrapper>
-          <TopNavbar />
-        </Wrapper>
-        <div className="sticky top-0 z-10 bg-white">
-          <Header />
-        </div>
-
-        {/* </Wrapper> */}
+      <div className="sticky top-0 z-10 bg-white">
+        <Header />
       </div>
+
       <div className="flex">
         <LeftSide />
         <RightSide />
       </div>
-      <div>
-        {/* <Wishlist /> */}
-      </div>
+      <div>{/* <Wishlist /> */}</div>
     </div>
   );
 };
