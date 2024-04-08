@@ -10,8 +10,8 @@ import RightSide from "../Molecules/RightSide";
 
 const EyeGlasses = () => {
   return (
-    <>
-      <div className="relative">
+    <div className="relative">
+      <div >
         {/* <Wrapper> */}
         <Wrapper>
           <TopNavbar />
@@ -29,7 +29,7 @@ const EyeGlasses = () => {
       <div>
         {/* <Wishlist /> */}
       </div>
-    </>
+    </div>
   );
 };
 

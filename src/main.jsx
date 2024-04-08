@@ -18,7 +18,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/Eyeware",
-    element: <EyeGlasses />,
+    element: <div> <div><Header/></div><EyeGlasses /></div>,
   },
   
   {
