@@ -14,7 +14,7 @@ const HomeSlider = () => {
         arrows
         autoPlaySpeed={2000}
         centerMode={false}
-        className=" flex justify-center"
+        className=" flex"
         containerClass=""
         dotListClass="invisible"
         draggable
@@ -63,7 +63,10 @@ const HomeSlider = () => {
         
       >
         {data.map((item) => (
-          <img key={item.id} src={item.image} className="w-[100%]"/>
+          <a href="" key={item.id}>
+          <img  src={item.image} className="w-[100%]"/>
+
+          </a>
         ))}
       </Carousel>
     </div>

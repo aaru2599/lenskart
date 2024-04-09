@@ -8,14 +8,14 @@ const FeaturesCelebs = () => {
     <div className="flex flex-col gap-[25px]">
       {data.map((item, index) => {
         return (
-          <div key={index}>
+          <div key={index} className="border-b pb-4">
             <FeaturedHeading heading={item.heading} />
             <div className={`${item.image.length>1?"grid grid-cols-2 gap-2":"flex"}`}>
               {item.image.map((imgItem, imgIndex) => {
                 return (
-                  <div key={imgIndex} className="">
+                  <a href="" key={imgIndex} className="">
                     <img className="" src={imgItem} alt="" />
-                  </div>
+                  </a>
                 );
               })}
             </div>

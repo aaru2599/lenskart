@@ -39,4 +39,18 @@ export const HomeSliderData = [
     link: "",
     id: 7,
   },
+  {
+    image:
+      "https://static1.lenskart.com/media/desktop/img/Mar24/SheildShades/SheildShadesWebBanner.jpg",
+    link: "",
+    id: 8,
+  },
+
+  {
+    image:
+      "https://static1.lenskart.com/media/desktop/img/2024/feb/IN/tentpole/web%20banner.jpg",
+
+    link: "",
+    id: 10,
+  },
 ];

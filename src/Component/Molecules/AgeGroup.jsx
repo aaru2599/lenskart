@@ -19,7 +19,7 @@ const AgeGroup = () => {
                     className="flex items-center   gap-3"
                   >
                     <input type="checkbox" />
-                    <div>{filterItem.age_group}</div>
+                    <div className="text-[14px]">{filterItem.age_group}</div>
                   </div>
                 );
               })}
