@@ -4,12 +4,18 @@ import { Link } from "react-router-dom";
 import Button from "./Button";
 const navData = CenterNavData;
 const CenterNav = () => {
+  const scrollTopTop=()=>{
+    window.scrollTo({
+      top:0,
+      behavior:"smooth"
+    })
+  }
   return (
     <div className="p-2 ">
       {navData.map((data, index) => {
         return (
           <div key={index} className="flex justify-between items-center">
-            <Link to={"/"} className="flex  gap-[30px]">
+            <Link to={"/"} className="flex  ">
               {data.left.map((leftItem, index) => (
                 <img
                   src={leftItem}
@@ -17,6 +23,7 @@ const CenterNav = () => {
                   key={index}
                   width={150}
                   className=" object-contain"
+                  onClick={scrollTopTop}
                 />
               ))}
             </Link>
@@ -31,7 +38,7 @@ const CenterNav = () => {
               {data.right.map((rightItem, rightIndex) => (
                 <div className="flex items-center gap-2" key={rightIndex}>
                   {rightItem.icon && (
-                    <img src={rightItem.icon} alt={rightItem.name} />
+                    <img src={rightItem.icon} alt={rightItem.name}  />
                   )}
                   <a href="" className="text-[14px]">
                     {rightItem.name}

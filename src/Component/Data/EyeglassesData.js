@@ -158,7 +158,7 @@ export const EyeglassesData = [
     type: "Hustlr ACE-Crystal",
     size: "Medium",
     price: 1700,
-    coupon: "Get For ₹1200. Coupon: SINGLE",
+    coupon: "",
   },
   {
     id: 3,
@@ -191,7 +191,7 @@ export const EyeglassesData = [
     type: "Sleek Steel",
     size: "Medium",
     price: 1700,
-    coupon: "Get For ₹1200. Coupon: SINGLE",
+    coupon: "Get For ₹900. Coupon: FIRST",
   },
   {
     id: 4,
@@ -223,7 +223,7 @@ export const EyeglassesData = [
     type: "Blue Billion",
     size: "Medium",
     price: 1500,
-    coupon: "Get For ₹1200. Coupon: SINGLE",
+    coupon: "",
   },
   {
     id: 5,
@@ -267,7 +267,7 @@ export const EyeglassesData = [
     type: "Ocean Blue",
     size: "Medium",
     price: 1200,
-    coupon: "Get For ₹1200. Coupon: SINGLE",
+    coupon: "Get For ₹1000. Coupon: SINGLE",
   },
   {
     id: 6,
@@ -311,7 +311,7 @@ export const EyeglassesData = [
     type: "Ocean Blue",
     size: "Medium",
     price: 1200,
-    coupon: "Get For ₹1200. Coupon: SINGLE",
+    coupon: "Get For ₹800. Coupon: SINGLE",
   },
   {
     id: 7,
@@ -355,7 +355,7 @@ export const EyeglassesData = [
     type: "Ocean Blue",
     size: "Medium",
     price: 1200,
-    coupon: "Get For ₹1200. Coupon: SINGLE",
+    coupon: "",
   },
   {
     id: 8,
@@ -487,7 +487,7 @@ export const EyeglassesData = [
     type: "Ocean Blue",
     size: "Medium",
     price: 1200,
-    coupon: "Get For ₹1200. Coupon: SINGLE",
+    coupon: "Get For ₹400. Coupon: NEW",
   },
   {
     id: 11,

@@ -3,6 +3,12 @@ import { BottomNavData } from "../Data/BottomNavData";
 import { Link } from "react-router-dom";
 const bottomNav = BottomNavData;
 const BottomNavbar = () => {
+  const scrollToTop=()=>{
+    window.scrollTo({
+      top:0,
+      behavior:"smooth"
+    })
+  }
   return (
     <div className=" p-3">
       {bottomNav.map((item, index) => {
@@ -12,7 +18,7 @@ const BottomNavbar = () => {
               {item.left.map((leftItem, leftIndex) => {
                 return (
                   <div key={leftIndex}>
-                    <Link to={leftItem.link} href="" className="tracking-[1px] hover:bg-slate-300 p-2 rounded text-[13px] font-[500]">{leftItem.name}</Link>
+                    <Link onClick={scrollToTop} to={leftItem.link} href="" className="tracking-[1px] hover:bg-slate-300 p-2 rounded text-[13px] font-[500]">{leftItem.name}</Link>
                   </div>
                 );
               })}

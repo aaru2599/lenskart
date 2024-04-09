@@ -1,26 +1,27 @@
 // import { FaRegHeart } from "react-icons/fa";
 
 import { CiHeart } from "react-icons/ci";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
+import Chip from "./Chip";
+import { useState } from "react";
 
 const EyeglassCard = ({ data }) => {
-  const navigate = useNavigate();
-  const onCardClick = (product) => {
-    navigate(`/product-details/${product.id}`);
-    // navigate(`/product-details/${product.id}`);
-  };
+  const [wishlist, setWishlist] = useState([]);
+  const heartClick = (item) => {
+    setWishlist((prevWishlist) => {
+      if (!prevWishlist.find((wish) => wish.id === item.id)) {
+        return [...prevWishlist, item];
+      } else {
+        return prevWishlist.filter((wish) => wish.id !== item.id);
+      }
+    });  };
+    console.log(wishlist);
   return (
     <div className="grid gap-3 grid-cols-4 ">
       {data.map((item, index) => {
         return (
           <div key={index} className="border rounded p-2">
-            <Link
-              className="relative"
-              onClick={() => onCardClick(item)}
-              to={`/product-details/${item.id}`}
-              state={{item}}
-              // to={`product-details/${item.id}`}
-            >
+            <Link className="relative" to={`/product-details/${item.id}`}>
               <div className=" absolute bottom-2 right-2    ">
                 <div>
                   {item.rating.map((ratingItem, ratingIndex) => {
@@ -72,13 +73,24 @@ const EyeglassCard = ({ data }) => {
                     alt={item.name}
                   />
 
-                  <div className="items-center absolute top-0 right-0 flex justify-between w-[100%]">
-                    <div className="  text-[10px] bg-green-200 font-semibold rounded px-2 text-green-800">
-                      {item.coupon}
-                    </div>
-                    <div className=" text-[20px] ">
+                  <div
+                    className={`items-center absolute top-0 right-0 flex  w-[100%] ${
+                      item.coupon ? "justify-between" : "justify-end"
+                    }`}
+                  >
+                    {item.coupon && <Chip data={item.coupon} />}
+
+                    <Link
+                      onClick={() => heartClick(item)}
+                      className=" text-[20px] "
+                      style={{
+                        color: wishlist.find((wish) => wish.id === item.id)
+                          ? "red"
+                          : "inherit",
+                      }} // Change color based on whether item is in wishlist
+                    >
                       <CiHeart />
-                    </div>
+                    </Link>
                   </div>
                 </div>
               </div>

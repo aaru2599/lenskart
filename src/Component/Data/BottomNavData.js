@@ -4,7 +4,7 @@ export const BottomNavData = [
         {
           key: 1,
           name: "EYEGLASSES",
-          link: "/Eyeware",
+          link: "/eyeware",
         },
         {
           key: 2,
