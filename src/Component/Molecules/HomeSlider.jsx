@@ -2,6 +2,7 @@ import React from "react";
 import Carousel from "react-multi-carousel";
 import Image from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import '/src/index.css'
 import { HomeSliderData } from "../Data/HomeSliderData";
 
 const HomeSlider = () => {
