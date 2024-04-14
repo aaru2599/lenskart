@@ -5,7 +5,7 @@ import FrameShape from "./FrameShape";
 
 const LeftSide = () => {
   return (
-    <div style={{ flex: "20%" }} className="p-4  sticky top-[110px] ">
+    <div className="sticky top-[114px] p-2">
       <AgeGroup />
       <FrameType />
       <FrameShape />

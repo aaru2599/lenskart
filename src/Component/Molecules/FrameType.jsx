@@ -7,7 +7,7 @@ const FrameType = () => {
   const data = FrameTypeData;
   return (
     <div>
-      <FilterHeading heading={"Frame Data"} />
+      <FilterHeading heading={"Frame Type"} />
       <FilterFrame data={data} />
     </div>
   );

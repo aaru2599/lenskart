@@ -9,7 +9,7 @@ const FilterFrame = ({ data }) => {
         {data.map((item) => (
           <div
             key={item.frame_name}
-            className="border flex flex-col justify-center items-center rounded p-1"
+            className="border flex flex-col justify-center items-center rounded p-1 "
           >
             <img src={item.frame_image} alt={item.frame_name} />
             <div className="text-slate-600 text-[12px]">{item.frame_name}</div>
