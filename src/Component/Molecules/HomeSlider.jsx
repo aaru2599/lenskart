@@ -14,10 +14,11 @@ const HomeSlider = () => {
         arrows
         autoPlaySpeed={2000}
         centerMode={false}
-        className=" flex"
+        className=" w-[100%] h-[100%]"
         containerClass=""
-        dotListClass="invisible"
+        dotListClass=""
         draggable
+        showDots={false}
         autoPlay={true}
         focusOnSelect={false}
         infinite
