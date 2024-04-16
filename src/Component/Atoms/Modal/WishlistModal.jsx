@@ -9,6 +9,21 @@ const WishlistModal = ({
 }) => {
   const [isVisible, setIsVisible] = useState(false);
   const [hidden, setHidden] = useState(false);
+  const [selectedItems, setSelectedItems] = useState([]);
+
+  const toggleItemSelection = (itemId) => {
+    setSelectedItems((prevSelectedItems) => {
+      if (prevSelectedItems.includes(itemId)) {
+        return prevSelectedItems.filter((id) => id !== itemId);
+      } else {
+        return [...prevSelectedItems, itemId];
+      }
+    });
+  };
+  const clearSelectedItems = () => {
+    setSelectedItems([]);
+  };
+
   console.log("hidden", hidden);
   //  console.log("wishlistprops",wishlist);
   useEffect(() => {
@@ -20,7 +35,7 @@ const WishlistModal = ({
   return (
     <>
       <div className={` ${modalClassName}`}>
-        <div className="flex  bg-[#333] justify-between   items-center py-2 border-b text-white  px-4">
+        <div className="flex rounded-t  bg-[#333] justify-between   items-center py-2 border-b text-white  px-4">
           <div></div>
           <div>Wishlist</div>
           <button>
@@ -32,17 +47,21 @@ const WishlistModal = ({
 
         {wishlistdata.length > 0 ? (
           <div>
-            <div className="max-h-[300px] overflow-auto bg-white">
+            <div className="h-[250px] overflow-auto bg-white">
               {wishlistdata.map((item) => {
                 return (
                   <div
                     key={item.id}
-                    className="relative border-b px-4 py-2 flex items-center justify-start gap-5 "
+                    className="relative border-b px-4 rounded py-2 flex items-center justify-start gap-5 "
                     onMouseEnter={() => setHidden(item.id)}
                     onMouseLeave={() => setHidden(null)}
                   >
                     <div>
-                      <input type="checkbox" />
+                      <input
+                        type="checkbox"
+                        checked={selectedItems.includes(item.id)}
+                        onChange={() => toggleItemSelection(item.id)}
+                      />
                     </div>
                     <div className="flex items-center gap-3">
                       <img
@@ -70,12 +89,12 @@ const WishlistModal = ({
               })}
             </div>
             <div className="flex justify-center gap-3 ">
-            <button
-                className=" flex  items-center text-[12px] font-[500] p-1"
-                
-              >
-                <div className="border px-[10px] rounded-md py-[2px] bg-[#329c9247] ">
-                  Clear 
+              <button className=" flex  items-center text-[12px] font-[500] p-1">
+                <div
+                  onClick={clearSelectedItems}
+                  className="border px-[10px] rounded-md py-[2px] bg-[#329c9247] "
+                >
+                  Clear
                 </div>
               </button>
               <button

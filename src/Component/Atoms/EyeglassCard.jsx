@@ -22,9 +22,9 @@ const EyeglassCard = ({ data }) => {
       prevWishlist.filter((item) => item.id !== id)
     );
   };
-  const handleClearWishlist=()=>{
-    setWishlist([])
-  }
+  const handleClearWishlist = () => {
+    setWishlist([]);
+  };
   const heartClick = (item) => {
     setWishlist((prevWishlist) => {
       if (!prevWishlist.find((wish) => wish.id === item.id)) {
@@ -119,14 +119,16 @@ const EyeglassCard = ({ data }) => {
                       <Link
                         onClick={() => heartClick(item)}
                         className=" text-[20px] "
-                        style={{
-                          color: wishlist.find((wish) => wish.id === item.id)
-                            ? "red"
-                            : "inherit",
-                        }} // Change color based on whether item is in wishlist
+                        // Change color based on whether item is in wishlist
                       >
                         <button onClick={openModal}>
-                          <CiHeart />
+                          <CiHeart
+                            style={{
+                              fill: wishlist.find((wish) => wish.id === item.id)
+                                ? "red"
+                                : "",
+                            }}
+                          />
                         </button>
                       </Link>
                     </div>
