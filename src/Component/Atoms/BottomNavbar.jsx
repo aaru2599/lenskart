@@ -27,7 +27,7 @@ const BottomNavbar = () => {
               {item.right.map((rightItem, rightIndex) => {
                 return (
                   <a href="" key={rightIndex}>
-                    <img src={rightItem.image} alt=""  className="rounded w-[60px] h-[100%]" />
+                    <img src={rightItem.image} alt=""  className="rounded w-[60px] h-[100%] object-contain" />
                   </a>
                 );
               })}

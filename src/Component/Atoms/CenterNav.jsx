@@ -27,9 +27,9 @@ const CenterNav = () => {
                 />
               ))}
             </Link>
-            <div className="w-[500px] border  rounded-md ">
+            <div className="w-[500px] h-[100%] border  rounded-md ">
               <input
-                className="w-[100%] p-1  rounded-md border-0 outline-0"
+                className="w-[100%] h-[100%] p-1  rounded-md border-0 outline-0"
                 type="text"
                 placeholder="What are you looking for?"
               />
