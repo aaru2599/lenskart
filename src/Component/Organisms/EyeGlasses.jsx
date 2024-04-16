@@ -48,7 +48,7 @@ const EyeGlasses = () => {
           <LeftSide />
         </div>
         <div className=" border-l " style={{ flex: "100%" }}>
-          <div className="sticky top-[114px] z-50   bg-white">
+          <div className="sticky top-[113px] z-50   bg-white">
             <RightSideHeader HeaderData={HeaderData}/>
           </div>
          <div className="p-4">

@@ -40,9 +40,9 @@ const CenterNav = () => {
                   {rightItem.icon && (
                     <img src={rightItem.icon} alt={rightItem.name}  />
                   )}
-                  <a href="" className="text-[14px]">
+                  <Link href="" className="text-[14px]">
                     {rightItem.name}
-                  </a>
+                  </Link>
                 </div>
               ))}
 

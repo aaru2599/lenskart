@@ -22,6 +22,9 @@ const EyeglassCard = ({ data }) => {
       prevWishlist.filter((item) => item.id !== id)
     );
   };
+  const handleClearWishlist=()=>{
+    setWishlist([])
+  }
   const heartClick = (item) => {
     setWishlist((prevWishlist) => {
       if (!prevWishlist.find((wish) => wish.id === item.id)) {
@@ -41,12 +44,13 @@ const EyeglassCard = ({ data }) => {
   console.log("wishlist", wishlist);
   return (
     <div>
-      <div className=" fixed bottom-0 left-[45%] z-50 bg-slate-100">
+      <div className=" fixed bottom-0 rounded left-[45%] z-50 bg-slate-100">
         <WishlistModal
           wishlistdata={wishlist}
           modalOpen={modalOpen}
           handleModal={handleModal}
           handleRemoveFromWish={handleRemoveFromWish}
+          handleClearWishlist={handleClearWishlist}
         />
       </div>
       <div className="grid gap-3 grid-cols-4 ">

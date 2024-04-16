@@ -17,15 +17,15 @@ const ToggleSwitch = ({ view, frame }) => {
           onChange={handleCheckboxChange}
         />
         <span
-          className={`flex items-center space-x-[6px] rounded py-1 px-[10px] text-[12px] font-medium ${
-            !isChecked ? "text-primary bg-[#f4f7ff]" : "text-body-color"
+          className={`flex items-center space-x-[6px] rounded py-1 px-[10px] text-[12px]  ${
+            !isChecked ? "font-[500] bg-[#329c9247] " : ""
           }`}
         >
           {frame}
         </span>
         <span
           className={`flex items-center space-x-[6px] rounded py-1 px-[10px] text-[12px] font-medium ${
-            isChecked ? "text-primary bg-[#f4f7ff]" : "text-body-color"
+            isChecked ? "text-primary bg-[#329c9247]" : "text-body-color"
           }`}
         >
           {view}
