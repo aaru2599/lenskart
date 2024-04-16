@@ -57,7 +57,7 @@ const HomeSlider = () => {
         rewindWithAnimation={false}
         rtl={false}
         shouldResetAutoplay
-        showDots
+        
         sliderClass=""
         slidesToSlide={1}
         swipeable
