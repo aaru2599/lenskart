@@ -105,7 +105,7 @@ const EyeglassCard = ({ data }) => {
                     <img
                       src={item.normal_image}
                       loading="lazy"
-                      className="h-[200px] object-contain"
+                      className="h-[200px] w-[200px] object-contain"
                       alt={item.name}
                     />
 

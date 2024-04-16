@@ -41,6 +41,7 @@ const EyeGlasses = () => {
         <img
           src="https://static1.lenskart.com/media/desktop/img/2024/apr/vibe-badlo/desktop-plp-vc-eye.png"
           alt=""
+          className="w-[100%] h-[100%] object-contain"
         />
       </div>
       <div className="flex gap-2 relative ">

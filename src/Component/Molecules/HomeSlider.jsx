@@ -64,7 +64,7 @@ const HomeSlider = () => {
       >
         {data.map((item) => (
           <a href="" key={item.id}>
-          <img  src={item.image} className="w-[100%]"/>
+          <img  src={item.image} className="w-[100%] h-[100%]"/>
 
           </a>
         ))}

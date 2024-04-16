@@ -25,7 +25,7 @@ const TrendingWear = ({ data }) => {
                     <div>
                       <img
                         src={cardItem.glass_img}
-                        className="w-[200px]"
+                        className="w-[200px] h-[100%]"
                         alt=""
                       />
                     </div>

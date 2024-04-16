@@ -11,7 +11,7 @@ const FilterFrame = ({ data }) => {
             key={item.frame_name}
             className="border flex flex-col justify-center items-center rounded p-1 "
           >
-            <img src={item.frame_image} alt={item.frame_name} />
+            <img src={item.frame_image} alt={item.frame_name} className="w-[50px] h-[30px] object-contain"/>
             <div className="text-slate-600 text-[12px]">{item.frame_name}</div>
           </div>
         ))}

@@ -2,8 +2,8 @@ function SliderNextArrow(props) {
     const { className, style, onClick } = props;
     return (
       <div
-        className={` rounded-full`}
-        style={{ display: "block", background: "pink" }}
+        className={`${className} rounded-full `}
+        style={{ display: "block", background: "grey" }}
         onClick={onClick}
       >right</div>
     );

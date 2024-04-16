@@ -21,8 +21,8 @@ const CenterNav = () => {
                   src={leftItem}
                   alt=""
                   key={index}
-                  width={150}
-                  className=" object-contain"
+
+                  className=" object-contain w-[100%] h-[50px]"
                   onClick={scrollTopTop}
                 />
               ))}
@@ -38,7 +38,7 @@ const CenterNav = () => {
               {data.right.map((rightItem, rightIndex) => (
                 <div className="flex items-center gap-2" key={rightIndex}>
                   {rightItem.icon && (
-                    <img src={rightItem.icon} alt={rightItem.name}  />
+                    <img src={rightItem.icon} alt={rightItem.name} className="w-[16px] h-[16px]"  />
                   )}
                   <Link href="" className="text-[14px]">
                     {rightItem.name}

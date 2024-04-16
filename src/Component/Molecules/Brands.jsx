@@ -18,7 +18,7 @@ const Brands = () => {
                 return (
                   <div key={brandIndex}>
                     <a href="">
-                      <img src={brandItem.brand_banner} alt="" />
+                      <img src={brandItem.brand_banner} className="w-[100%] h-[100%] object-contain" alt="" />
                     </a>
                     <div
                       className={`${
