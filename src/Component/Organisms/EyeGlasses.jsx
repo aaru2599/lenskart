@@ -39,7 +39,7 @@ const EyeGlasses = () => {
       </div>
       <div className="relative">
         <img
-          src="/Eyeglasses/EyeglassesBanner.png"
+          src="/Eyeglasses/EyeglassesBanner.webp"
           alt=""
           className="w-[100%] h-[100%] object-contain"
         />
