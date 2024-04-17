@@ -13,7 +13,7 @@ const Home = () => {
     <div className="">
       <HomeSlider data={data} />
       <img
-        src="https://static1.lenskart.com/media/desktop/img/Apr22/Bannerforexport.jpg"
+        src="/DoMoreBeMore/Domorebemore.webp"
         className="w-[100%] h-[100%]"
         alt=""
       />

@@ -39,7 +39,7 @@ const EyeGlasses = () => {
       </div>
       <div className="relative">
         <img
-          src="https://static1.lenskart.com/media/desktop/img/2024/apr/vibe-badlo/desktop-plp-vc-eye.png"
+          src="/Eyeglasses/EyeglassesBanner.png"
           alt=""
           className="w-[100%] h-[100%] object-contain"
         />

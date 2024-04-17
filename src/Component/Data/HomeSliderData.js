@@ -1,56 +1,51 @@
 export const HomeSliderData = [
   {
     image:
-      "https://static1.lenskart.com/media/desktop/img/2024/apr/vibe-badlo/Frame%2048097456.jpg",
+    "/HomeSliderImage/Slider1.jpg",
     link: "",
     id: 1,
   },
-  {
-    image: "https://static5.lenskart.com/media/uploads/weblptt.jpg",
-    link: "",
-    id: 2,
-  },
+  // {
+  //   image: 
+  //   "/HomeSliderImaghomee/Slider2.png",
+  //   link: "",
+  //   id: 2,
+  // },
   {
     image:
-      "https://static1.lenskart.com/media/desktop/img/2024/feb/IN/Sobhita/Desktop.png",
+      "/HomeSliderImage/Slider3.webp",
     link: "",
     id: 3,
   },
   {
     image:
-      "https://static1.lenskart.com/media/desktop/img/2024/jan/patriot/Web-banner.jpg",
+      "/HomeSliderImage/Slider4.webp",
     link: "",
     id: 4,
   },
   {
     image:
-      "https://static1.lenskart.com/media/desktop/img/oct9/elc-two/web-1.gif",
+    "/HomeSliderImage/Slider5.webp",
     link: "",
     id: 5,
   },
   {
-    image: "https://static5.lenskart.com/media/uploads/neethone-web-banner.jpg",
+    image: "/HomeSliderImage/Slider6.webp",
     link: "",
     id: 6,
   },
   {
     image:
-      "https://static1.lenskart.com/media/desktop/img/sep22/jj-titanium/Web-Banner.gif",
+      "/HomeSliderImage/Slider7.webp",
     link: "",
     id: 7,
   },
   {
     image:
-      "https://static1.lenskart.com/media/desktop/img/Mar24/SheildShades/SheildShadesWebBanner.jpg",
+      "/HomeSliderImage/Slider8.webp",
     link: "",
     id: 8,
   },
 
-  {
-    image:
-      "https://static1.lenskart.com/media/desktop/img/2024/feb/IN/tentpole/web%20banner.jpg",
 
-    link: "",
-    id: 10,
-  },
 ];

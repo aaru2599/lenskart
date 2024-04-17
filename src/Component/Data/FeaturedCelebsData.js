@@ -2,72 +2,73 @@ export const FeaturedCelebsData = [
   {
     heading: "PREMIUM EYEWEAR",
     image: [
-      "https://static1.lenskart.com/media/desktop/img/oct23/home/13-10-23/As%20seen%20on%20Desk.jpg",
+      "/FeaturedImage/PremiumEyeware.webp",
     ],
   },
   {
     heading: "AS SEEN ON MOUNI ROY",
     image: [
-        "https://static1.lenskart.com/media/desktop/img/23may/cannes/web.gif",
+        "/FeaturedImage/mouniroy.webp",
     ],
   },
   {
     heading: "AS SEEN ON SHARK TANK",
     image: [
-        "https://static1.lenskart.com/media/desktop/img/Dec22/1-Dec/Homepage-Banner-web.gif",
+        "/FeaturedImage/AsSeenOnTank.webp",
     ],
   },
   {
     heading: "AS SEEN ON KARAN JOHAR",
     image: [
-        "https://static1.lenskart.com/media/desktop/img/Dec22/Web_banner.gif",
+      "/FeaturedImage/KaranJohar.webp",
     ],
   },
   {
     heading: "TRENDING SUNGLASSES",
     image: [
-        "https://static1.lenskart.com/media/desktop/img/Jan23/sunglasses/Sun-Banner-web.gif",
+"/FeaturedImage/TrendSunglasses.webp",
     ],
   },
   {
     heading: "OJOS",
     image: [
-        "https://static1.lenskart.com/media/desktop/img/Feb23/23feb/ojos%20banner/ojos%20banner/web%20banner/ojos-web-1199.gif",
+        "/FeaturedImage/Ojos.webp",
     ],
   },
   {
     heading: "AQUACOLOR - GLAM UP WITH COLOR LENSES",
     image: [
-        "https://static1.lenskart.com/media/desktop/img/Oct22/kiara/Refresh-Banner-Web.gif",
+        "/FeaturedImage/Aquacolor.webp",
     ],
   },
   {
     heading: "FIND THE PERFECT FIT",
     image: [
-        "https://static1.lenskart.com/media/desktop/img/Aug21/Desktop/ce-square.jpg",
-        "https://static1.lenskart.com/media/desktop/img/Aug21/Desktop/sun-square.jpg"
+      "/FeaturedImage/PerfectFind/PerfactFind1.webp",
+      "/FeaturedImage/PerfectFind/PerfactFind2.webp",
     ],
   },
   {
     heading: "INTRODUCING OJOS WEAR - SUBSCRIBE & SAVE",
     image: [
-        "https://static1.lenskart.com/media/desktop/img/May22/ojos-web.jpg",
+        "/FeaturedImage/ojos-web.webp",
     ],
   },
   {
     heading: "CONTACT LENSES & MORE",
     image: [
-        "https://static1.lenskart.com/media/desktop/img/June22/contact-lens-more.jpg",
-        "https://static1.lenskart.com/media/desktop/img/June22/contact-lens-more-1.jpg"
+      "/FeaturedImage/ContactLens/contact-lens1 (1).webp",
+      "/FeaturedImage/ContactLens/contact-lens2.webp",
+
     ],
   },
   {
     heading: "BUY IT YOUR WAY",
     image: [
-        "https://static1.lenskart.com/media/desktop/img/republic/celb-new/call.png",
-        "https://static1.lenskart.com/media/desktop/img/republic/celb-new/wts-up.png",
-        "https://static1.lenskart.com/media/desktop/img/Aug21/Desktop/hto.jpg",
-        "https://static1.lenskart.com/media/desktop/img/Aug21/Desktop/stores.jpg"
+      "/FeaturedImage/BuyIt/call.webp",
+      "/FeaturedImage/BuyIt/wts-up.webp",
+      "/FeaturedImage/BuyIt/hto.webp",
+      "/FeaturedImage/BuyIt/stores.webp",
     ],
   },
 ];

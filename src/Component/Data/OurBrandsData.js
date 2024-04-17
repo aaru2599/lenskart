@@ -3,8 +3,7 @@ export const OurBrandData = [
     heading: "OUR BRANDS",
     brand_data: [
       {
-        brand_banner:
-          "https://static1.lenskart.com/media/desktop/img/Aug21/Desktop/VC-Banner.jpg",
+        brand_banner: "/BrandsBanner/VC-Banner.webp",
         eyeglasses: [
           {
             name: "eyeglasses",
@@ -33,8 +32,7 @@ export const OurBrandData = [
         ],
       },
       {
-        brand_banner:
-          "https://static1.lenskart.com/media/desktop/img/Nov22/Updated%20brand%20banner%20jj%20.jpg",
+        brand_banner: "/BrandsBanner/jj.webp",
         eyeglasses: [
           {
             name: "eyeglasses",
@@ -63,8 +61,7 @@ export const OurBrandData = [
         ],
       },
       {
-        brand_banner:
-          "https://static1.lenskart.com/media/desktop/img/Aug21/25-Aug/LK-AIR-Banner.jpg",
+        brand_banner: "/BrandsBanner/LK-AIR.webp",
         eyeglasses: [
           {
             name: "eyeglasses",
@@ -77,8 +74,7 @@ export const OurBrandData = [
         ],
       },
       {
-        brand_banner:
-          "https://static1.lenskart.com/media/desktop/img/Aug21/25-Aug/LK-Readers-Banner.jpg",
+        brand_banner: "/BrandsBanner/LK-AIR.webp",
         eyeglasses: [
           {
             name: "eyeglasses",
@@ -95,8 +91,7 @@ export const OurBrandData = [
       },
 
       {
-        brand_banner:
-          "https://static1.lenskart.com/media/desktop/img/Nov20/25-Nov/Banner05_Final2ndDec21.jpg",
+        brand_banner: "/BrandsBanner/Hooper.webp",
         eyeglasses: [
           {
             name: "WITH POWER COMPUTER BLU LENSES",
@@ -125,8 +120,7 @@ export const OurBrandData = [
         ],
       },
       {
-        brand_banner:
-          "https://static1.lenskart.com/media/desktop/img/June22/Our-Brands-Banner.jpg",
+        brand_banner: "/BrandsBanner/Aqualens.webp",
         eyeglasses: [
           {
             name: "CONTACT LENSES",

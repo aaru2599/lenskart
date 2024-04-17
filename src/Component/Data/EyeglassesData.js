@@ -1,10 +1,8 @@
 export const EyeglassesData = [
   {
     id: 1,
-    normal_image:
-      "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/lenskart-air-la-e15417-w-c1-eyeglasses_csvfile-1701688526805-img_7894.jpg",
+    normal_image: "/Eyeglasses/ProductsImages/Lenskart-air.webp",
     // "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/lenskart-air-la-e15417-w-c1-eyeglasses_csvfile-1701688470121-img_7893.jpg",
-
     hover_image:
       "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//l/i/lenskart-air-la-e15417-w-c1-eyeglasses_csvfile-1701688470121-img_7893.jpg",
 
@@ -39,12 +37,13 @@ export const EyeglassesData = [
     ],
     name: "Lenskart Hustlr",
     type: "Ocean Blue",
-    full_name:"Ocean Blue Full Rim Lenskart Hustlr Eyeglasses - 216521",
+    full_name: "Ocean Blue Full Rim Lenskart Hustlr Eyeglasses - 216521",
     full_type: "Ocean Blue Full Rim Wayfarer",
-    lens_type:"With Anti-Glare Lenses",
+    lens_type: "With Anti-Glare Lenses",
     size: "Medium",
     price: 1200,
-    iframe_link:"https://www.youtube.com/embed/dRxJ8okzHtQ?autoplay=1&amp;mute=1&amp;loop=1&amp;rel=0&amp;showinfo=0&amp;color=white&amp;iv_load_policy=3&amp;playlist=dRxJ8okzHtQ",
+    iframe_link:
+      "https://www.youtube.com/embed/dRxJ8okzHtQ?autoplay=1&amp;mute=1&amp;loop=1&amp;rel=0&amp;showinfo=0&amp;color=white&amp;iv_load_policy=3&amp;playlist=dRxJ8okzHtQ",
     coupon: "Get For ₹1200. Coupon: SINGLE",
     featured_img: [
       "https://static1.lenskart.com/media/desktop/img/republic/hustlr-pdps/Ocean%20Blue-Mumbai/Oceanblue1.png",
@@ -126,7 +125,7 @@ export const EyeglassesData = [
   {
     id: 2,
     normal_image:
-      "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/crystal-full-rim-wayfarer-lenskart-hustlr-lh-e16985-w-c5-eyeglasses_img_2263_14march24.jpg",
+      "/Eyeglasses/ProductsImages/grey-transparent-gray-full-rim-rectangle-lenskart-air-signia.webp",
 
     hover_image:
       "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//l/i/lenskart-air-la-e15417-w-c1-eyeglasses_csvfile-1701688470121-img_7893.jpg",
@@ -162,8 +161,7 @@ export const EyeglassesData = [
   },
   {
     id: 3,
-    normal_image:
-      "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//v/i/black-silver-full-rim-geometric-vincent-chase-sleek-steel-vc-e13634-c7-eyeglasses_g_4950_03_01_23.jpg",
+    normal_image: "/Eyeglasses/ProductsImages/Vincent-chase.webp",
 
     hover_image:
       "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//l/i/lenskart-air-la-e15417-w-c1-eyeglasses_csvfile-1701688470121-img_7893.jpg",
@@ -195,9 +193,7 @@ export const EyeglassesData = [
   },
   {
     id: 4,
-    normal_image:
-      "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-orange-full-rim-rectangle-lenskart-air-essentials-la-e16153-c3-eyeglasses_g_9603_18_08_2023.jpg",
-
+    normal_image: "/Eyeglasses/ProductsImages/blue-orange-lenskart-air.webp",
     hover_image:
       "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//l/i/lenskart-air-la-e15417-w-c1-eyeglasses_csvfile-1701688470121-img_7893.jpg",
 
@@ -228,7 +224,8 @@ export const EyeglassesData = [
   {
     id: 5,
     normal_image:
-      "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/lenskart-air-la-e15417-w-c1-eyeglasses_csvfile-1701688526805-img_7894.jpg",
+      "/Eyeglasses/ProductsImages/black-grey-half-rim-rectangle-lenskart-air.webp",
+    // "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/lenskart-air-la-e15417-w-c1-eyeglasses_csvfile-1701688526805-img_7894.jpg",
     // "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/lenskart-air-la-e15417-w-c1-eyeglasses_csvfile-1701688470121-img_7893.jpg",
 
     hover_image:
@@ -272,9 +269,7 @@ export const EyeglassesData = [
   {
     id: 6,
     normal_image:
-      "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/lenskart-air-la-e15417-w-c1-eyeglasses_csvfile-1701688526805-img_7894.jpg",
-    // "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/lenskart-air-la-e15417-w-c1-eyeglasses_csvfile-1701688470121-img_7893.jpg",
-
+      "/Eyeglasses/ProductsImages/black-gunmetal-black-full-rim-wayfarer-lenskart-air.webp", // "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/lenskart-air-la-e15417-w-c1-eyeglasses_csvfile-1701688470121-img_7893.jpg",
     hover_image:
       "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//l/i/lenskart-air-la-e15417-w-c1-eyeglasses_csvfile-1701688470121-img_7893.jpg",
 
@@ -316,9 +311,7 @@ export const EyeglassesData = [
   {
     id: 7,
     normal_image:
-      "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/lenskart-air-la-e15417-w-c1-eyeglasses_csvfile-1701688526805-img_7894.jpg",
-    // "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/lenskart-air-la-e15417-w-c1-eyeglasses_csvfile-1701688470121-img_7893.jpg",
-
+      "/Eyeglasses/ProductsImages/brown-transparent-full-rim-rectangle-lenskart-air-essentials.webp", // "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/lenskart-air-la-e15417-w-c1-eyeglasses_csvfile-1701688470121-img_7893.jpg",
     hover_image:
       "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//l/i/lenskart-air-la-e15417-w-c1-eyeglasses_csvfile-1701688470121-img_7893.jpg",
 
@@ -360,9 +353,7 @@ export const EyeglassesData = [
   {
     id: 8,
     normal_image:
-      "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/lenskart-air-la-e15417-w-c1-eyeglasses_csvfile-1701688526805-img_7894.jpg",
-    // "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/lenskart-air-la-e15417-w-c1-eyeglasses_csvfile-1701688470121-img_7893.jpg",
-
+      "Eyeglasses/ProductsImages/dark-grey-full-rim-hustlr-lenskart-air-classic.webp", // "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/lenskart-air-la-e15417-w-c1-eyeglasses_csvfile-1701688470121-img_7893.jpg",
     hover_image:
       "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//l/i/lenskart-air-la-e15417-w-c1-eyeglasses_csvfile-1701688470121-img_7893.jpg",
 
@@ -404,7 +395,7 @@ export const EyeglassesData = [
   {
     id: 9,
     normal_image:
-      "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/lenskart-air-la-e15417-w-c1-eyeglasses_csvfile-1701688526805-img_7894.jpg",
+      "/Eyeglasses/ProductsImages/gold-pink-full-rim-geometric-vincent-chase-sleek-steel (1).webp",
     // "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/lenskart-air-la-e15417-w-c1-eyeglasses_csvfile-1701688470121-img_7893.jpg",
 
     hover_image:
@@ -448,9 +439,7 @@ export const EyeglassesData = [
   {
     id: 10,
     normal_image:
-      "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/lenskart-air-la-e15417-w-c1-eyeglasses_csvfile-1701688526805-img_7894.jpg",
-    // "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/lenskart-air-la-e15417-w-c1-eyeglasses_csvfile-1701688470121-img_7893.jpg",
-
+      "/Eyeglasses/ProductsImages/grey-transparent-gray-full-rim-rectangle-lenskart-air-signia.webp",
     hover_image:
       "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//l/i/lenskart-air-la-e15417-w-c1-eyeglasses_csvfile-1701688470121-img_7893.jpg",
 
@@ -492,9 +481,7 @@ export const EyeglassesData = [
   {
     id: 11,
     normal_image:
-      "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/lenskart-air-la-e15417-w-c1-eyeglasses_csvfile-1701688526805-img_7894.jpg",
-    // "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/lenskart-air-la-e15417-w-c1-eyeglasses_csvfile-1701688470121-img_7893.jpg",
-
+      "public/Eyeglasses/ProductsImages/vincent-chase-vc-e13634-ful-ram-ale.webp", // "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/lenskart-air-la-e15417-w-c1-eyeglasses_csvfile-1701688470121-img_7893.jpg",
     hover_image:
       "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//l/i/lenskart-air-la-e15417-w-c1-eyeglasses_csvfile-1701688470121-img_7893.jpg",
 

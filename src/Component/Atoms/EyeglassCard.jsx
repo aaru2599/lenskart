@@ -56,7 +56,7 @@ const EyeglassCard = ({ data }) => {
       <div className="grid gap-3 grid-cols-4 ">
         {data.map((item, index) => {
           return (
-            <div key={index} className="border rounded p-2">
+            <div key={index} className="border rounded p-2 hover:shadow-md transform transition-transform duration-5000 hover:scale-101">
               <Link className="relative" to={`/product-details/${item.id}`}>
                 <div className=" absolute bottom-2 right-2    ">
                   <div>
@@ -138,11 +138,11 @@ const EyeglassCard = ({ data }) => {
 
               {/* =========================bottom section====================== */}
               <div className="pt-2 flex flex-col gap-2">
-                <div className="flex justify-between">
-                  <div className="font-semibold text-[13px] w-[50%]">
+                <div className="flex justify-between text-slate-500">
+                  <div className="font-[600]  text-[13px] w-[50%]">
                     {item.name}
                   </div>
-                  <div className="text-[12px] text-end w-[50%] truncate font-[600] text-gray-600 ">
+                  <div className="text-[12px] text-end w-[50%] truncate  text-gray-600 ">
                     {item.type}
                   </div>
                 </div>

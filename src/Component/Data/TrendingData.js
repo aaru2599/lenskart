@@ -6,49 +6,49 @@ export const TrendingData = [
     glass_data: [
       {
         glass_img:
-          "https://static1.lenskart.com/media/desktop/img/Sep21/image179.png",
+          "/Trends/round.webp",
         title: "Round",
         btn_link: "",
       },
       {
         glass_img:
-          "https://static1.lenskart.com/media/desktop/img/Sep21/cateeye.jpg",
+          "/Trends/cateye.webp",
         title: "Cat-Eye",
         btn_link: "",
       },
       {
         glass_img:
-          "https://static1.lenskart.com/media/desktop/img/Sep21/clubmaster.jpg",
+          "/Trends/clubmaster.webp",
         title: "Clubmaster",
         btn_link: "",
       },
       {
         glass_img:
-          "https://static1.lenskart.com/media/desktop/img/Sep21/trans.jpg",
+          "/Trends/transparant.webp",
         title: "Transparant",
         btn_link: "",
       },
       {
         glass_img:
-          "https://static1.lenskart.com/media/desktop/img/Sep21/blend.jpg",
+          "/Trends/blend.webp",
         title: "Blend Edit",
         btn_link: "",
       },
       {
         glass_img:
-          "https://static1.lenskart.com/media/desktop/img/Sep21/clipon.jpg",
+          "/Trends/Airclipon.webp",
         title: "Air Clip On",
         btn_link: "",
       },
       {
         glass_img:
-          "https://static1.lenskart.com/media/desktop/img/Sep21/airflex.jpg",
+          "/Trends/airflex.webp",
         title: "Air flex",
         btn_link: "",
       },
       {
         glass_img:
-          "https://static1.lenskart.com/media/desktop/img/Sep21/aviator.jpg",
+          "/Trends/aviator.webp",
         title: "Ratro Aviator",
         btn_link: "",
       },
