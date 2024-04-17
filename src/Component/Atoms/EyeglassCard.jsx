@@ -158,11 +158,7 @@ const EyeglassCard = ({ data }) => {
             </div>
           );
         })}
-        <div>
-          {wishlist.map((item) => {
-            return <div key={item.id}>{item.name}</div>;
-          })}
-        </div>
+       
       </div>
     </div>
   );

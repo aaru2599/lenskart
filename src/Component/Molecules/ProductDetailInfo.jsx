@@ -1,6 +1,4 @@
-import React from "react";
 import { CiHeart } from "react-icons/ci";
-import Header from "./Header";
 import Accordian from "../Atoms/Accordian";
 
 const ProductDetailInfo = ({ data }) => {

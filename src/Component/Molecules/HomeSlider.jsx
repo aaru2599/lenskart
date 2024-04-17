@@ -12,18 +12,18 @@ const HomeSlider = () => {
       <Carousel
         additionalTransfrom={0}
         arrows
-        autoPlaySpeed={2000}
+        autoPlaySpeed={3000}
         centerMode={false}
         className=" w-[100%] h-[100%]"
         containerClass=""
         dotListClass=""
-        draggable
+        draggable={false}
         showDots={false}
         autoPlay={true}
         focusOnSelect={false}
         infinite
         itemClass=""
-        keyBoardControl
+        keyBoardControl={true}
         minimumTouchDrag={80}
         pauseOnHover
         renderArrowsWhenDisabled={true}
@@ -60,7 +60,7 @@ const HomeSlider = () => {
         
         sliderClass=""
         slidesToSlide={1}
-        swipeable
+        swipeable={false}
         
       >
         {data.map((item) => (

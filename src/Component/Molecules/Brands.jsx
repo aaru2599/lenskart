@@ -31,7 +31,7 @@ const Brands = () => {
                         {brandItem.eyeglasses.map((eyeItem, eyeIndex) => {
                           return (
                             <div key={eyeIndex}>
-                              <div className="text-center text-[20px] underline p-4 font-[500]">
+                              <div className="text-center text-[18px] underline p-4 font-[500] text-slate-600">
                                 {eyeItem.name.toUpperCase()}
                               </div>
                               <div className=" grid grid-cols-3 gap-4">
@@ -50,7 +50,7 @@ const Brands = () => {
                           brandItem.sunglasses.map((eyeItem, eyeIndex) => {
                             return (
                               <div key={eyeIndex}>
-                                <div className="text-center text-[20px] underline font-[500] p-4">
+                                <div className="text-center text-[18px] text-slate-600  underline font-[500] p-4">
                                   {eyeItem.name.toUpperCase()}
                                 </div>
                                 <div className="  grid grid-cols-3 gap-4">
