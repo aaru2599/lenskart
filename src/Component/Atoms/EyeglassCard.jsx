@@ -58,28 +58,9 @@ const EyeglassCard = ({ data }) => {
           return (
             <div key={index} className="border rounded p-2 hover:shadow-md transform transition-transform duration-5000 hover:scale-101">
               <Link className="relative" to={`/product-details/${item.id}`}>
-                <div className=" absolute bottom-2 right-2    ">
-                  <div>
-                    {item.rating.map((ratingItem, ratingIndex) => {
-                      return (
-                        <div
-                          key={ratingIndex}
-                          className="px-1  flex gap-1 items-center border text-[10px] rounded-full"
-                        >
-                          <div>{ratingItem.rate}</div>
+                <div className="absolute bottom-2   left-5  ">
+                {item.coupon && <Chip data={item.coupon} />}
 
-                          <img
-                            src={ratingItem.star}
-                            height={12}
-                            width={12}
-                            alt=""
-                          />
-
-                          <div>{ratingItem.number}</div>
-                        </div>
-                      );
-                    })}
-                  </div>
                 </div>
                 <div className=" border-b  relative flex gap-2 items-center  ">
                   <div className="flex flex-col bg-[#e9e9e9] h-[100%] p-[2px] py-[4px] rounded-full  gap-2">
@@ -114,8 +95,28 @@ const EyeglassCard = ({ data }) => {
                         item.coupon ? "justify-between" : "justify-end"
                       }`}
                     >
-                      {item.coupon && <Chip data={item.coupon} />}
+                       <div>
+                    {item.rating.map((ratingItem, ratingIndex) => {
+                      return (
+                        <div
+                          key={ratingIndex}
+                          className="px-1  flex gap-1 items-center border text-[10px] rounded-full"
+                        >
+                          <div>{ratingItem.rate}</div>
 
+                          <img
+                            src={ratingItem.star}
+                            height={12}
+                            width={12}
+                            alt=""
+                          />
+
+                          <div>{ratingItem.number}</div>
+                        </div>
+                      );
+                    })}
+                  </div>
+                     
                       <Link
                         onClick={() => heartClick(item)}
                         className=" text-[20px] "
@@ -139,7 +140,7 @@ const EyeglassCard = ({ data }) => {
               {/* =========================bottom section====================== */}
               <div className="pt-2 flex flex-col gap-2">
                 <div className="flex justify-between text-slate-500">
-                  <div className="font-[600]  text-[13px] w-[50%]">
+                  <div className="font-[500]  text-[13px] w-[50%]">
                     {item.name}
                   </div>
                   <div className="text-[12px] text-end w-[50%] truncate  text-gray-600 ">
@@ -147,10 +148,10 @@ const EyeglassCard = ({ data }) => {
                   </div>
                 </div>
                 <div className="flex justify-between">
-                  <div className="text-[13px] font-semibold text-gray-600">
+                  <div className="text-[13px] font-[500] text-slate-500">
                     &#8377;{item.price}
                   </div>
-                  <div className="text-[12px] bg-slate-200 rounded px-2 text-slate-600 font-semibold">
+                  <div className="text-[12px] bg-slate-200 rounded px-2 text-slate-600">
                     {item.size}
                   </div>
                 </div>

@@ -14,7 +14,7 @@ const FeaturesCelebs = () => {
               {item.image.map((imgItem, imgIndex) => {
                 return (
                   <a href="" key={imgIndex} className="">
-                    <img className="w-[100%] h-[auto] " src={imgItem} alt=""  />
+                    <img className=" h-[370px] object-contain " src={imgItem} alt=""  />
                   </a>
                 );
               })}

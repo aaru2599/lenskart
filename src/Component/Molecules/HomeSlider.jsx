@@ -14,7 +14,7 @@ const HomeSlider = () => {
         arrows
         autoPlaySpeed={3000}
         centerMode={false}
-        className=" w-[100%] h-[100%]"
+        className=" w-[100%] h-[350px]"
         containerClass=""
         dotListClass=""
         draggable={false}
