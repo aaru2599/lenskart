@@ -13,9 +13,9 @@ function HeaderOffCanvas() {
   const handleShow = () => setShow(true);
   const data = BottomNavData;
 
-  const handleCategoryClose=()=>{
-    handleClose()
-  }
+  const handleCategoryClose = () => {
+    handleClose();
+  };
   return (
     <>
       <Button
@@ -36,9 +36,19 @@ function HeaderOffCanvas() {
         <Offcanvas.Body>
           {data.map((item, index) => {
             return (
-              <div key={index} className="flex flex-col gap-3">
+              <div key={index} className="">
                 {item.left.map((leftItem) => {
-                  return <Offcanvas.Body onClick={handleCategoryClose} className=" border text-[20px] text-center rounded font-[500] p-2" key={leftItem.key}><Link className="no-underline text-stone-400" to={leftItem.link} >{leftItem.name}</Link></Offcanvas.Body>
+                  return (
+                    <Offcanvas.Header onClick={handleCategoryClose} key={leftItem.key}>
+                      <Link
+                      onClick={handleCategoryClose}
+                      to={leftItem.link}
+                      className=" no-underline text-stone-400 p-2 w-[100%] bg-slate-100 border text-[20px] text-center rounded font-[500]"
+                    >
+                      {leftItem.name}
+                    </Link>
+                    </Offcanvas.Header>
+                  );
                 })}
               </div>
             );
