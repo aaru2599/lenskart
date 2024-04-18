@@ -10,3 +10,12 @@
 .react-multiple-carousel__arrow{
   z-index: 0;
 }
+
+a{
+  text-decoration: none;
+  color: black;
+}
+Link{
+  text-decoration: none;
+  color: black;
+}

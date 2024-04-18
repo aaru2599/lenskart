@@ -1,4 +1,3 @@
-import React from "react";
 import HomeSlider from "../Molecules/HomeSlider";
 import { HomeSliderData } from "../Data/HomeSliderData";
 import TrendingWear from "../Molecules/TrendingWear";
@@ -11,6 +10,7 @@ const Home = () => {
   const trendingData = TrendingData;
   return (
     <div className="">
+      {/* <HeaderOffCanvas/> */}
       <HomeSlider data={data} />
       <img
         src="/DoMoreBeMore/Domorebemore.webp"

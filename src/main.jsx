@@ -6,7 +6,6 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import ProductDetails from "./Component/Molecules/ProductDetails.jsx";
 import HomeSlider from "./Component/Molecules/HomeSlider.jsx";
 import EyeGlasses from "./Component/Organisms/EyeGlasses.jsx";
-import Header from "./Component/Molecules/Header.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -20,6 +19,7 @@ const router = createBrowserRouter([
     path: "/Eyeware",
     element: <div><EyeGlasses /></div>,
   },
+  
   
   {
     path: "/product-details/:id",

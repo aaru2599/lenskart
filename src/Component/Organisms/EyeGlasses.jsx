@@ -11,7 +11,7 @@ const HeaderData = [
     center: [
       {
         frame: "VIEW FRAMES",
-        view: "VIEW 3D TRY ON",
+        view: "TRY ON 3D",
       },
     ],
     right_side: [
@@ -45,11 +45,11 @@ const EyeGlasses = () => {
         />
       </div>
       <div className="flex gap-2 relative ">
-        <div style={{ flex: "25%" }}>
+        <div style={{ flex: "25%" }}className="md:block hidden">
           <LeftSide />
         </div>
         <div className=" border-l " style={{ flex: "100%" }}>
-          <div className="sticky top-[113px] z-50   bg-white">
+          <div className="sticky md:top-[113px] top-[50px] z-50   bg-white">
             <RightSideHeader HeaderData={HeaderData}/>
           </div>
          <div className="p-4">

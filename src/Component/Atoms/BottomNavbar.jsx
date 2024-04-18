@@ -10,15 +10,15 @@ const BottomNavbar = () => {
     })
   }
   return (
-    <div className=" p-3">
+    <div className=" md:p-3">
       {bottomNav.map((item, index) => {
         return (
-          <div key={index} className="flex justify-between items-center">
+          <div key={index} className=" hidden md:flex justify-between items-center ">
             <div className="flex gap-3 justify-between items-center">
               {item.left.map((leftItem, leftIndex) => {
                 return (
                   <div key={leftIndex}>
-                    <Link onClick={scrollToTop} to={leftItem.link} href="" className="tracking-[1px] hover:bg-slate-300 p-2 rounded text-[13px] font-[500]">{leftItem.name}</Link>
+                    <Link onClick={scrollToTop} to={leftItem.link} href="" className="tracking-[1px] hover:bg-slate-300 p-2 rounded text-[13px] font-[500] no-underline text-slate-600">{leftItem.name}</Link>
                   </div>
                 );
               })}

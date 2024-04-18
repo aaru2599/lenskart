@@ -12,7 +12,7 @@ function App() {
     <Wrapper>
     <TopNavbar/>
     </Wrapper>
-      <div className="sticky top-0 z-10 bg-white">
+      <div className="sticky top-[-1px] z-10 bg-white">
         <Header />
       </div>
       <Wrapper>

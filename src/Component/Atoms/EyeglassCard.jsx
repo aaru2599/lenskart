@@ -44,7 +44,7 @@ const EyeglassCard = ({ data }) => {
   console.log("wishlist", wishlist);
   return (
     <div>
-      <div className=" fixed bottom-0 rounded left-[45%] z-50 bg-slate-100">
+      <div className=" fixed bottom-0 rounded md:left-[45%] z-50  bg-slate-100">
         <WishlistModal
           wishlistdata={wishlist}
           modalOpen={modalOpen}
@@ -53,17 +53,60 @@ const EyeglassCard = ({ data }) => {
           handleClearWishlist={handleClearWishlist}
         />
       </div>
-      <div className="grid gap-3 grid-cols-4 ">
+      <div className="grid md:gap-3 md:grid-cols-4  grid-cols-2 gap-[15px]">
         {data.map((item, index) => {
           return (
-            <div key={index} className="border rounded p-2 hover:shadow-md transform transition-transform duration-5000 hover:scale-101">
-              <Link className="relative" to={`/product-details/${item.id}`}>
-                <div className="absolute bottom-2   left-5  ">
-                {item.coupon && <Chip data={item.coupon} />}
-
+            <div
+              key={index}
+              className="border rounded p-2 hover:shadow-md md:w-[100%] w-[170px] hover:scale-[1.01] transition-transform transform-gpu "
+            >
+              <Link
+                className="   no-underline text-black relative"
+                to={`/product-details/${item.id}`}
+              >
+                <div className="absolute md:bottom-2 bottom-1  w-[100%]    ">
+                  {item.coupon && <Chip data={item.coupon} />}
                 </div>
+
+                  <div className="absolute left-0 top-0">
+                    {item.rating.map((ratingItem, ratingIndex) => {
+                      return (
+                        <div
+                          key={ratingIndex}
+                          className="px-1  flex gap-1 items-center border text-[10px] rounded-full"
+                        >
+                          <div>{ratingItem.rate}</div>
+
+                          <img
+                            src={ratingItem.star}
+                            height={12}
+                            width={12}
+                            alt=""
+                          />
+
+                          <div>{ratingItem.number}</div>
+                        </div>
+                      );
+                    })}
+                  </div>
+
+                  <Link 
+                    onClick={() => heartClick(item)}
+                    className=" text-[20px] no-underline text-black absolute right-0 top-0 "
+                    // Change color based on whether item is in wishlist
+                  >
+                    <button onClick={openModal}>
+                      <CiHeart
+                        style={{
+                          fill: wishlist.find((wish) => wish.id === item.id)
+                            ? "red"
+                            : "",
+                        }}
+                      />
+                    </button>
+                  </Link>
                 <div className=" border-b  relative flex gap-2 items-center  ">
-                  <div className="flex flex-col bg-[#e9e9e9] h-[100%] p-[2px] py-[4px] rounded-full  gap-2">
+                  <div className="md:flex hidden flex-col bg-[#e9e9e9] h-[100%] p-[2px] py-[4px] rounded-full  gap-2">
                     {item.color_image.map((colorItem, colorIndex) => {
                       return (
                         <div
@@ -86,53 +129,9 @@ const EyeglassCard = ({ data }) => {
                     <img
                       src={item.normal_image}
                       loading="lazy"
-                      className="h-[200px] w-[300px] object-contain"
+                      className="md:h-[200px] h-[120px] md:w-[300px] w-[240px] object-contain"
                       alt={item.name}
                     />
-
-                    <div
-                      className={`items-center absolute top-0 right-0 flex  w-[100%] ${
-                        item.coupon ? "justify-between" : "justify-end"
-                      }`}
-                    >
-                       <div>
-                    {item.rating.map((ratingItem, ratingIndex) => {
-                      return (
-                        <div
-                          key={ratingIndex}
-                          className="px-1  flex gap-1 items-center border text-[10px] rounded-full"
-                        >
-                          <div>{ratingItem.rate}</div>
-
-                          <img
-                            src={ratingItem.star}
-                            height={12}
-                            width={12}
-                            alt=""
-                          />
-
-                          <div>{ratingItem.number}</div>
-                        </div>
-                      );
-                    })}
-                  </div>
-                     
-                      <Link
-                        onClick={() => heartClick(item)}
-                        className=" text-[20px] "
-                        // Change color based on whether item is in wishlist
-                      >
-                        <button onClick={openModal}>
-                          <CiHeart
-                            style={{
-                              fill: wishlist.find((wish) => wish.id === item.id)
-                                ? "red"
-                                : "",
-                            }}
-                          />
-                        </button>
-                      </Link>
-                    </div>
                   </div>
                 </div>
               </Link>
@@ -140,10 +139,10 @@ const EyeglassCard = ({ data }) => {
               {/* =========================bottom section====================== */}
               <div className="pt-2 flex flex-col gap-2">
                 <div className="flex justify-between text-slate-500">
-                  <div className="font-[500]  text-[13px] w-[50%]">
+                  <div className="font-[500] text-[10px]  md:text-[13px] md:w-[50%]">
                     {item.name}
                   </div>
-                  <div className="text-[12px] text-end w-[50%] truncate  text-gray-600 ">
+                  <div className="md:text-[12px] text-[8px] text-end w-[50%] truncate  text-gray-600 ">
                     {item.type}
                   </div>
                 </div>
@@ -159,7 +158,6 @@ const EyeglassCard = ({ data }) => {
             </div>
           );
         })}
-       
       </div>
     </div>
   );

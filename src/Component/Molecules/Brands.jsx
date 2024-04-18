@@ -18,12 +18,12 @@ const Brands = () => {
                 return (
                   <div key={brandIndex}>
                     <a href="">
-                      <img src={brandItem.brand_banner} className="w-[100%] h-[100%] object-contain" alt="" />
+                      <img src={brandItem.brand_banner} className="w-[100%] md:h-[245px] object-contain " alt="" />
                     </a>
                     <div
                       className={`${
                         brandItem.sunglasses
-                          ? "flex justify-between"
+                          ? "flex justify-between gap-2"
                           : "flex justify-center"
                       } `}
                     >
@@ -31,10 +31,10 @@ const Brands = () => {
                         {brandItem.eyeglasses.map((eyeItem, eyeIndex) => {
                           return (
                             <div key={eyeIndex}>
-                              <div className="text-center text-[18px] underline p-4 font-[500] text-slate-600">
+                              <div className="text-center md:text-[18px] text-[12px] underline md:p-4 p-2 font-[500] text-slate-600">
                                 {eyeItem.name.toUpperCase()}
                               </div>
-                              <div className=" grid grid-cols-3 gap-4">
+                              <div className={` grid md:grid-cols-3 ${brandItem.sunglasses?"grid-cols-2":"grid-cols-3"} md:gap-4 gap-2`}>
                                 {eyeItem.image.map((img, index) => {
                                   return (
                                     <BrandImage imgUrl={img} key={index} />
@@ -50,10 +50,10 @@ const Brands = () => {
                           brandItem.sunglasses.map((eyeItem, eyeIndex) => {
                             return (
                               <div key={eyeIndex}>
-                                <div className="text-center text-[18px] text-slate-600  underline font-[500] p-4">
+                                <div className="text-center md:text-[18px] text-[12px] text-slate-600  underline font-[500] md:p-4 p-2">
                                   {eyeItem.name.toUpperCase()}
                                 </div>
-                                <div className="  grid grid-cols-3 gap-4">
+                                <div className={` grid md:grid-cols-3 ${brandItem.eyeglasses?"grid-cols-2":"grid-cols-3"} md:gap-4 gap-2`}>
                                   {eyeItem.image.map((img, index) => {
                                     return (
                                       <BrandImage imgUrl={img} key={index} />

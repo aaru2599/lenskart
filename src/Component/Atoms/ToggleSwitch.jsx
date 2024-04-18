@@ -9,7 +9,7 @@ const ToggleSwitch = ({ view, frame }) => {
 
   return (
     <>
-      <label className="themeSwitcherTwo shadow-card relative inline-flex cursor-pointer select-none items-center justify-center rounded-md bg-white p-1">
+      <label className=" shadow-card relative inline-flex cursor-pointer  items-center justify-center rounded bg-white md:p-1  h-[20px]  md:w-[100%]">
         <input
           type="checkbox"
           className="sr-only"
@@ -17,15 +17,15 @@ const ToggleSwitch = ({ view, frame }) => {
           onChange={handleCheckboxChange}
         />
         <span
-          className={`flex items-center space-x-[6px] rounded py-1 px-[10px] text-[12px]  ${
-            !isChecked ? "font-[500] bg-[#329c9247] " : ""
+          className={`flex items-center rounded md:py-1  md:px-[10px]  md:text-[12px]   text-[10px]${
+            !isChecked ? " bg-[#329c9247] " : ""
           }`}
         >
           {frame}
         </span>
         <span
-          className={`flex items-center space-x-[6px] rounded py-1 px-[10px] text-[12px] font-medium ${
-            isChecked ? "text-primary bg-[#329c9247]" : "text-body-color"
+          className={`flex items-center space-x-[6px] rounded md:py-1  md:px-[10px]  md:text-[12px] text-[10px] font-medium ${
+            isChecked ? " bg-[#329c9247]" : "text-body-color"
           }`}
         >
           {view}

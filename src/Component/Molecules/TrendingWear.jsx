@@ -7,17 +7,17 @@ const TrendingWear = ({ data }) => {
       {data.map((item, index) => {
         return (
           <div key={index}>
-            <div className="flex items-center gap-2">
-              <div className="border-b-2 border-slate-400 w-[50px]"></div>
+            <div className="flex items-center gap-2 md:justify-start justify-center ">
+              <div className="border-b-2 border-slate-400 md:w-[50px] w-[25px]"></div>
               <div className="flex items-center gap-1">
-                <span className="font-[500] text-[20px]">{item.heading1}</span>
-                <span className="font-semibold  text-[26px]">
+                <span className="font-[500] md:text-[20px] text-[13px]">{item.heading1}</span>
+                <span className="font-semibold  md:text-[26px] text-[16px]">
                   {item.heading2}
                 </span>
-                <span className="font-[500]">{item.heading3}</span>
+                <span className="font-[500] md:text-[18px] text-[12px]">{item.heading3}</span>
               </div>
             </div>
-            <div className=" flex justify-between w-[100%]">
+            <div className=" flex md:justify-between w-[100%] overflow-hidden overflow-x-auto md:overflow-x-hidden scrollable-data  ">
               {item.glass_data.map((cardItem, cardIndex) => {
                 return (
                   <div
@@ -31,7 +31,7 @@ const TrendingWear = ({ data }) => {
                         alt=""
                       />
                     </div>
-                    <div className="font-[500]">{cardItem.title}</div>
+                    <div className="font-[500] md:text-[14px]">{cardItem.title}</div>
                     <Button data={"Explore"} />
                   </div>
                 );

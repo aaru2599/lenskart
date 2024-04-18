@@ -7,6 +7,7 @@ import { useMemo, useState } from "react";
 import ProductDetailsLeft from "./ProductDetailsLeft";
 import { EyeglassesData } from "../Data/EyeglassesData";
 import TopNavbar from "../Atoms/TopNavbar";
+import { Wrapper } from "../../App";
 
 const ProductDetails = () => {
   const { id } = useParams();
@@ -15,7 +16,8 @@ const ProductDetails = () => {
     return records;
   }, [id]);
   return (
-    <div className="">
+   <Wrapper>
+     <div className="">
       <TopNavbar/>
       <div className="sticky bg-white top-0  z-20">
         <Header />
@@ -33,6 +35,7 @@ const ProductDetails = () => {
         </div>
       </div>
     </div>
+   </Wrapper>
   );
 };
 

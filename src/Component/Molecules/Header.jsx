@@ -3,7 +3,6 @@ import React from "react";
 import CenterNav from "../Atoms/CenterNav";
 import BottomNavbar from "../Atoms/BottomNavbar";
 import styled from "styled-components";
-import TopNavbar from "../Atoms/TopNavbar";
 
 const Header = () => {
   return (

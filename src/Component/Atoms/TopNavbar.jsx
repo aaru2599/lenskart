@@ -5,14 +5,14 @@ const TopNavbar = () => {
   console.log("topNavList", navList);
   return (
    <Wrapper>
-     <div className="p-2">
+     <div className="p-2 md:block hidden">
       {navList.map((item, index) => {
         return (
           <div key={index} className="flex justify-between text-[12px]">
             <div className="flex gap-4">
               {item.left.map((navData, index) => {
                 return (
-                  <a href="" key={index} >
+                  <a href="" key={index} className="no-underline text-black" >
                     {navData}
                   </a>
                 );

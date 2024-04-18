@@ -14,7 +14,7 @@ const HomeSlider = () => {
         arrows
         autoPlaySpeed={3000}
         centerMode={false}
-        className=" w-[100%] h-[350px]"
+        className=" w-[100%] md:h-[350px] "
         containerClass=""
         dotListClass=""
         draggable={false}
@@ -65,7 +65,7 @@ const HomeSlider = () => {
       >
         {data.map((item) => (
           <a href="" key={item.id}>
-          <img  src={item.image} className="w-[100%] h-[100%]"/>
+          <img  src={item.image} className="w-[100%] md:h-[100%] "/>
 
           </a>
         ))}

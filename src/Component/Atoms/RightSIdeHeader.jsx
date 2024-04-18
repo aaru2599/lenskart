@@ -20,7 +20,7 @@ const RightSideHeader = ({ HeaderData }) => {
             <div>
               {item.center.map((centerItem, centerIndex) => {
                 return (
-                  <div key={centerIndex} className="flex">
+                  <div key={centerIndex} className="md:flex hidden">
                     <ToggleSwitch
                       frame={centerItem.frame}
                       view={centerItem.view}
