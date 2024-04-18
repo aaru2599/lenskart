@@ -22,13 +22,13 @@ const ProductDetails = () => {
       <div className="sticky bg-white top-0  z-20">
         <Header />
       </div>
-      <div className="">
+      <div className="flex justify-center items-center">
         <div className="flex p-4  ">
           <div  className="md:flex-[70%] flex-[100%] gap-2 flex justify-center  ">
             <ProductDetailsLeft selectedProduct={selectedProduct} />
           </div>
-          <div className="" style={{ flex: "30%" }}>
-            <div className="md:block hidden sticky top-32">
+          <div className="md:block hidden" style={{ flex: "30%" }}>
+            <div className=" sticky top-32">
               <ProductDetailInfo data={selectedProduct} />
             </div>
           </div>
