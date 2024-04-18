@@ -7,13 +7,13 @@ const ProductDetailInfo = ({ data }) => {
     <>
       <div className="p-4 flex flex-col gap-2 border rounded  text-slate-800">
         <div className="flex flex-col gap-2">
-          <div className="flex justify-between items-center">
+          <div className="md:flex hidden justify-between items-center ">
             <div className="text-[13px]">{data.name}</div>
             <div>
               <CiHeart />
             </div>
           </div>
-          <div className=" ">
+          <div className="md:block  hidden">
             <span className="font-bold text-[16px] text-slate-600">
               {data.full_type}
             </span>
@@ -48,14 +48,14 @@ const ProductDetailInfo = ({ data }) => {
             </div>
           </div>
         </div>
-        <div className=" flex  gap-3 ">
-          <div className="border border-[#00bac6] bg-[#00bac6]  rounded w-[70%]  flex flex-col justify-center items-center">
+        <div className=" flex md:flex-row flex-col gap-3 ">
+          <div className="border border-[#00bac6] bg-[#00bac6]  rounded md:w-[70%] w-[100%]  flex flex-col justify-center items-center">
             <div className="text-center text-[12px] font-semibold">SELECT LENSES</div>
             <div className="text-[11px] font-[500] text-center ">
               1 Year Warrenty & 15 Days Return
             </div>
           </div>
-          <div className="relative border h-[40px] border-[#b7a058] bg-[#f7f1de]    rounded w-[50%] flex justify-start items-center ">
+          <div className="relative border h-[40px] border-[#b7a058] bg-[#f7f1de]    rounded md:w-[50%] w-[100%] flex md:justify-start justify-center items-center ">
             <div className="text-[12px] font-semibold p-2">Try On</div>
             <img
               src="https://static.lenskart.com/media/desktop/img/pdp/try_on_model.png"

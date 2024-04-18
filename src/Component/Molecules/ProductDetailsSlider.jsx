@@ -12,12 +12,12 @@ function ProductDetailSlider({ imgLink, setClickImage }) {
     dots: false,
     infinite: false,
     speed: 500,
-    slidesToShow: 5,
-    slidesToScroll: 2,
-    centerMode: true,
+    slidesToShow: 6,
+    slidesToScroll: 3,
+    // centerMode: true,
     // className: "center",
     focusOnSelect: true,
-    centerPadding: "60px",
+    // centerPadding: "60px",
 
     
    
@@ -45,8 +45,8 @@ function ProductDetailSlider({ imgLink, setClickImage }) {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
+          slidesToShow: 3,
+          slidesToScroll: 2,
         },
       },
     ],
@@ -57,7 +57,7 @@ function ProductDetailSlider({ imgLink, setClickImage }) {
     console.log("e.target.value", imgUrl);
   };
   return (
-    <div className="slider-container w-[600px] ">
+    <div className="slider-container md:w-[600px] w-[330px] ">
       <Slider {...settings}>
         {imgLink.map((imgData, index) => {
           return (
@@ -66,6 +66,7 @@ function ProductDetailSlider({ imgLink, setClickImage }) {
                 src={imgData}
                 onClick={() => onImageClick(imgData)}
                 alt=""
+                loading="lazy"
                 className={`w-[80px] h-[80px] p-2   border rounded focus:border-2 ${
                   imgData == selectedImage ? "border-black" : ""
                 } `}
