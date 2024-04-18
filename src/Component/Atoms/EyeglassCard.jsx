@@ -43,7 +43,7 @@ const EyeglassCard = ({ data }) => {
   }, []);
   console.log("wishlist", wishlist);
   return (
-    <div>
+    <div className="flex justify-center ">
       <div className=" fixed bottom-0 rounded md:left-[45%] z-50  bg-slate-100">
         <WishlistModal
           wishlistdata={wishlist}
@@ -53,7 +53,7 @@ const EyeglassCard = ({ data }) => {
           handleClearWishlist={handleClearWishlist}
         />
       </div>
-      <div className="grid md:gap-3 md:grid-cols-4  grid-cols-2 gap-[15px]">
+      <div className="grid md:gap-3 md:grid-cols-4  grid-cols-2 gap-[10px] ">
         {data.map((item, index) => {
           return (
             <div
@@ -107,7 +107,7 @@ const EyeglassCard = ({ data }) => {
                     </button>
                   </Link>
                 <div className=" border-b  relative flex gap-2 items-center  ">
-                  <div className="md:flex hidden flex-col bg-[#e9e9e9] h-[100%] p-[2px] py-[4px] rounded-full  gap-2">
+                  <div className="md:flex hidden flex-col bg-[#e9e9e9]  p-[2px] py-[4px] rounded-full  gap-2">
                     {item.color_image.map((colorItem, colorIndex) => {
                       return (
                         <div
