@@ -36,7 +36,7 @@ const CenterNav = () => {
                 placeholder="What are you looking for?"
               />
             </div>
-         <div><HeaderOffCanvas/></div>
+         {/* <div><HeaderOffCanvas/></div> */}
             <div className="hidden md:flex items-center gap-4">
               {data.right.map((rightItem, rightIndex) => (
                 <div className="flex items-center gap-2" key={rightIndex}>
