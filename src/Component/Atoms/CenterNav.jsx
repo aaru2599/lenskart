@@ -13,7 +13,7 @@ const CenterNav = () => {
     })
   }
   return (
-    <div className="md:p-2 ">
+    <div className="md:p-2 z-100">
       {navData.map((data, index) => {
         return (
           <div key={index} className="flex md:justify-between md:items-center items-center gap-2 ">

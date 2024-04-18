@@ -58,7 +58,7 @@ const EyeglassCard = ({ data }) => {
           return (
             <div
               key={index}
-              className="border rounded p-2 hover:shadow-md md:w-[100%] w-[170px] hover:scale-[1.01] transition-transform transform-gpu "
+              className="border rounded p-2 hover:shadow-md   hover:scale-[1.01] transition-transform transform-gpu "
             >
               <Link
                 className="   no-underline text-black relative"

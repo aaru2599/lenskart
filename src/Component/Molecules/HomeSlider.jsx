@@ -2,7 +2,7 @@ import React from "react";
 import Carousel from "react-multi-carousel";
 import Image from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import '/src/index.css'
+import "/src/index.css"
 import { HomeSliderData } from "../Data/HomeSliderData";
 
 const HomeSlider = () => {
@@ -14,7 +14,7 @@ const HomeSlider = () => {
         arrows
         autoPlaySpeed={3000}
         centerMode={false}
-        className=" w-[100%] md:h-[350px] "
+        className=" w-[100%] md:h-[350px] z-0"
         containerClass=""
         dotListClass=""
         draggable={false}

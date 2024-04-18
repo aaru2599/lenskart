@@ -9,7 +9,7 @@ const ToggleSwitch = ({ view, frame }) => {
 
   return (
     <>
-      <label className=" shadow-card relative inline-flex cursor-pointer  items-center justify-center rounded bg-white md:p-1  h-[20px]  md:w-[100%]">
+      <label className=" shadow-card relative inline-flex cursor-pointer  items-center justify-center rounded bg-white md:p-1  h-[20px]  md:h-[100%]">
         <input
           type="checkbox"
           className="sr-only"
