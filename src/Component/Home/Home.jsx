@@ -14,7 +14,7 @@ const Home = () => {
       <HomeSlider data={data} />
       <img
         src="/DoMoreBeMore/Domorebemore.webp"
-        className="md:h-[230px] h-[80px] object-contain"
+        className="md:h-[230px] h-[100px] object-contain"
         loading="lazy"
         alt=""
       />
