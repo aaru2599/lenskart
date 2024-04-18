@@ -60,19 +60,7 @@ export const OurBrandData = [
           },
         ],
       },
-      {
-        brand_banner: "/BrandsBanner/LK-AIR.webp",
-        eyeglasses: [
-          {
-            name: "eyeglasses",
-            image: [
-              "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//v/i/vincent-chase-vc-e12852-c1-eyeglasses_vincent-chase-vc-e12852-c1-eyeglasses_g_1089_1.jpg",
-              "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//v/i/vincent-chase-vc-e12947-c2-eyeglasses_vincent-chase-vc-e12947-c2-eyeglasses_G_1969_1.jpg",
-              "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//l/i/Black-Full-Rim-Rectangle-Lenskart-AIR-Flex-LA-E12852-C2-Eyeglasses_vincent-chase-vc-e12852-c2-eyeglasses_2eyeglasses_G_2091_10_02_2022.jpg",
-            ],
-          },
-        ],
-      },
+
       {
         brand_banner: "/BrandsBanner/LK-AIR.webp",
         eyeglasses: [
@@ -82,9 +70,9 @@ export const OurBrandData = [
               "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//l/i/black-rectangle-lenskart-readers-lr-6967-c1b-reading-eyeglass-(only-for--1.50-power)_g_415705_03_2022.jpg",
               "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//l/i/black-full-rim-rectangle-lenskart-readers-lr-e11058-c4-a-reading-eyeglasses-(only-for--1.25-power)_g_1944_6_16_22.jpg",
               "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//l/i/black-rectangle-lenskart-readers-lr-e11058-c3d-reading-eyeglass-(only-for--2.50-power)_g_409405_03_2022.jpg",
-              "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//l/i/black-rectangle-lenskart-readers-lr-e11058-c3b-reading-eyeglass-(only-for--1.50-power)_g_411005_03_2022.jpg",
-              "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//l/i/black-full-rim-rectangle-lenskart-readers-lr-e11058-c4-b-reading-eyeglass-(only-for--1.75-power)_g_1116_14_06_2022.jpg",
-              "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//l/i/black-rectangle-lenskart-readers-lr-e11058-c3c-reading-eyeglass-(only-for--2.00-power)_g_407605_03_2022.jpg",
+              "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//l/i/lenskart-air-online:-tortoise-brown-full-rim-cat-eye-lenskart-air-online-air-flex-vc-e11366-c4-eyeglasses_vincent-chase-vc-e11366-c4-eyeglasses_vincent-chase-vc-e11366-c4-eyeglasses_m_5404_3_1_3_05_july23.jpg",
+              "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//v/i/vincent-chase-vc-e12311-c1-eyeglasses_vincent-chase-vc-e12311-c1-eyeglasses_vincent-chase-vc-e12311-c1-eyeglasses_g_4977.jpg",
+              "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//v/i/vincent-chase-vc-e11378-c1-eyeglasses_vincent-chase-vc-e11378-c1-eyeglasses_m_5279_2_1_4.jpg",
             ],
           },
         ],

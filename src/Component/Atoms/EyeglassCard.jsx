@@ -80,6 +80,7 @@ const EyeglassCard = ({ data }) => {
                           <img
                             src={ratingItem.star}
                             height={12}
+                            loading="lazy"
                             width={12}
                             alt=""
                           />
@@ -116,6 +117,7 @@ const EyeglassCard = ({ data }) => {
                           <img
                             className="w-[15px] h-[12px] rounded-full "
                             src={colorItem.logo}
+                            loading="lazy"
                             alt=""
                           />
                         </div>

@@ -1,4 +1,3 @@
-import React from "react";
 import { OurBrandData } from "../Data/OurBrandsData";
 import FeaturedHeading from "../Atoms/FeaturedHeading";
 import BrandImage from "../Atoms/BrandImage";
@@ -18,7 +17,7 @@ const Brands = () => {
                 return (
                   <div key={brandIndex}>
                     <a href="">
-                      <img src={brandItem.brand_banner} className="w-[100%] md:h-[245px] object-contain " alt="" />
+                      <img src={brandItem.brand_banner} loading="lazy" className="w-[100%] md:h-[245px] object-contain " alt="" />
                     </a>
                     <div
                       className={`${
@@ -34,7 +33,7 @@ const Brands = () => {
                               <div className="text-center md:text-[18px] text-[12px] underline md:p-4 p-2 font-[500] text-slate-600">
                                 {eyeItem.name.toUpperCase()}
                               </div>
-                              <div className={` grid md:grid-cols-3 ${brandItem.sunglasses?"grid-cols-2":"grid-cols-3"} md:gap-4 gap-2`}>
+                              <div className={` grid  ${brandItem.sunglasses?"grid-cols-2 md:grid-cols-3":"grid-cols-3 md:grid-cols-6"} md:gap-4 gap-2`}>
                                 {eyeItem.image.map((img, index) => {
                                   return (
                                     <BrandImage imgUrl={img} key={index} />
