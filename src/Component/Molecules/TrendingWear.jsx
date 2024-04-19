@@ -31,7 +31,7 @@ const TrendingWear = ({ data }) => {
                         alt=""
                       />
                     </div>
-                    <div className="font-[500] md:text-[14px]">{cardItem.title}</div>
+                    <div className="font-[500] md:text-[14px]  text-[12px]">{cardItem.title}</div>
                     <Button data={"Explore"} />
                   </div>
                 );
