@@ -68,44 +68,30 @@ const EyeglassCard = ({ data }) => {
                   {item.coupon && <Chip data={item.coupon} />}
                 </div>
 
-                  <div className="absolute left-0 top-0">
-                    {item.rating.map((ratingItem, ratingIndex) => {
-                      return (
-                        <div
-                          key={ratingIndex}
-                          className="px-1  flex gap-1 items-center border text-[10px] rounded-full"
-                        >
-                          <div>{ratingItem.rate}</div>
+                <div className="absolute left-0 top-0">
+                  {item.rating.map((ratingItem, ratingIndex) => {
+                    return (
+                      <div
+                        key={ratingIndex}
+                        className="px-1  flex gap-1 items-center border text-[10px] rounded-full"
+                      >
+                        <div>{ratingItem.rate}</div>
 
-                          <img
-                            src={ratingItem.star}
-                            height={12}
-                            loading="lazy"
-                            width={12}
-                            alt=""
-                          />
+                        <img
+                          src={ratingItem.star}
+                          height={12}
+                          loading="lazy"
+                          width={12}
+                          alt=""
+                        />
 
-                          <div>{ratingItem.number}</div>
-                        </div>
-                      );
-                    })}
-                  </div>
+                        <div>{ratingItem.number}</div>
+                      </div>
+                    );
+                  })}
+                </div>
 
-                  <Link 
-                    onClick={() => heartClick(item)}
-                    className=" text-[20px] no-underline text-black absolute right-0 top-0 "
-                    // Change color based on whether item is in wishlist
-                  >
-                    <button onClick={openModal}>
-                      <CiHeart
-                        style={{
-                          fill: wishlist.find((wish) => wish.id === item.id)
-                            ? "red"
-                            : "",
-                        }}
-                      />
-                    </button>
-                  </Link>
+              
                 <div className=" border-b  relative flex gap-2 items-center  ">
                   <div className="md:flex hidden flex-col bg-[#e9e9e9]  p-[2px] py-[4px] rounded-full  gap-2">
                     {item.color_image.map((colorItem, colorIndex) => {
@@ -157,6 +143,24 @@ const EyeglassCard = ({ data }) => {
                   </div>
                 </div>
               </div>
+              <Link
+                  onClick={(e) => {
+                    e.preventDefault();
+                    heartClick(item);
+                  }}
+                  className=" text-[20px] no-underline text-black absolute right-2 top-2 "
+                  // Change color based on whether item is in wishlist
+                >
+                  <button onClick={openModal}>
+                    <CiHeart
+                      style={{
+                        fill: wishlist.find((wish) => wish.id === item.id)
+                          ? "red"
+                          : "",
+                      }}
+                    />
+                  </button>
+                </Link>
             </div>
           );
         })}
