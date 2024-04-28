@@ -481,7 +481,7 @@ export const EyeglassesData = [
   {
     id: 11,
     normal_image:
-      "public/Eyeglasses/ProductsImages/vincent-chase-vc-e13634-ful-ram-ale.webp", // "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/lenskart-air-la-e15417-w-c1-eyeglasses_csvfile-1701688470121-img_7893.jpg",
+      "/Eyeglasses/ProductsImages/vincent-chase-vc-e13634-ful-ram-ale.webp", // "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/lenskart-air-la-e15417-w-c1-eyeglasses_csvfile-1701688470121-img_7893.jpg",
     hover_image:
       "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//l/i/lenskart-air-la-e15417-w-c1-eyeglasses_csvfile-1701688470121-img_7893.jpg",
 
